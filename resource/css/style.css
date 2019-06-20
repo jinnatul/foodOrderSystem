@@ -100,3 +100,36 @@ header {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+.logo {
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+.main_nav {
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+}
+
+.main_nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main_nav li a:link,
+.main_nav li a:visited {
+    padding: 8px 0;
+    color: #fff;
+    text-decoration: none;
+    font-size: 110%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.main_nav li a:hover,
+.main_nav li a:checked {
+    border-bottom: 2px solid #00e600;
+}

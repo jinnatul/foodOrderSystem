@@ -27,17 +27,79 @@ html {
     margin: 0 auto;
 }
 
+section {
+    padding: 80px 0;
+}
+
+.box {
+    padding: 1%;
+}
+
 /****** Heading *********/
+
+h1,
+h2,
+h3 {
+    font-weight: 300;
+}
 
 h1 {
     margin-top: 0;
     margin-bottom: 20px;
-    font-size: 240px;
     color: #fff;
-    font-weight: 300;
-    letter-spacing: 1px;
+    font-size: 240%;
     word-spacing: 3px;
+    letter-spacing: 1px;
 }
+
+h2 {
+    font-size: 180%;
+    word-spacing: 1px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+h2::after {
+    display: block;
+    height: 2px;
+    background-color: #cf6d17;
+    content: " ";
+    width: 530px;
+    margin: 0 auto;
+    margin-top: 15px;
+    
+}
+
+
+/****** Paragraph *********/
+
+.long-copy {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.box p {
+    font-size: 90%;
+    line-height: 145%;
+}
+
+
+/****** Icons *********/
+
+.icon_big {
+    font-size: 400%;
+    display: block;
+    color:  #f2f20d;
+    margin-bottom: 10px;
+}
+
 
 
 /****** Buttons *********/

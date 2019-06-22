@@ -10,5 +10,4 @@
 ![add meals](https://user-images.githubusercontent.com/31995155/59966243-2baedd00-953b-11e9-83b0-dd6ef9924c00.png)
 
 # Add Working Steps
-![add work steps](https://user-images.githubusercontent.com/31995155/59966245-2e113700-953b-11e9-9cca-ef1c890bb71d.png)
-
+![add work steps](https://user-images.githubusercontent.com/31995155/59967765-ae8e6280-9550-11e9-8fb6-f06673f1d1cc.png)

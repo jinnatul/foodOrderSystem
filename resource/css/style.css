@@ -35,6 +35,16 @@ section {
     padding: 1%;
 }
 
+
+/****** Marquee *********/
+
+marquee {
+    margin-top: 0.5%;
+    width: 400px;
+    color: #00e600;
+}
+
+
 /****** Heading *********/
 
 h1,
@@ -183,7 +193,7 @@ header {
 
 .main_nav li a:link,
 .main_nav li a:visited {
-    padding: 8px 0;
+    
     color: #fff;
     text-decoration: none;
     font-size: 110%;

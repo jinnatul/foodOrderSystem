@@ -61,7 +61,8 @@ h2 {
 }
 
 h3 {
-    font-size: 110%;
+    font-size: 120%;
+    font: bold;
     margin-bottom: 15px;
 }
 
@@ -88,6 +89,7 @@ h2::after {
 .box p {
     font-size: 90%;
     line-height: 145%;
+    font: 100;
 }
 
 
@@ -96,10 +98,8 @@ h2::after {
 .icon_big {
     font-size: 400%;
     display: block;
-    color:  #f2f20d;
     margin-bottom: 10px;
 }
-
 
 
 /****** Buttons *********/

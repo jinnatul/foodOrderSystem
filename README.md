@@ -11,3 +11,6 @@
 
 # Add Working Steps
 ![add work steps](https://user-images.githubusercontent.com/31995155/59967765-ae8e6280-9550-11e9-8fb6-f06673f1d1cc.png)
+
+# Add Cities
+![add cities](https://user-images.githubusercontent.com/31995155/59976785-e9dd6f80-95ea-11e9-904a-37564f26952e.png)

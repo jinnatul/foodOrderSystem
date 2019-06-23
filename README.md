@@ -14,3 +14,6 @@
 
 # Add Cities
 ![add cities](https://user-images.githubusercontent.com/31995155/59976785-e9dd6f80-95ea-11e9-904a-37564f26952e.png)
+
+# Add top customer revews
+![add top customer reviews](https://user-images.githubusercontent.com/31995155/59979282-7a29ad80-9607-11e9-8bce-b7d3571bbd1d.png)

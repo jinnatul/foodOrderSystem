@@ -536,3 +536,115 @@ textarea {
     background-color: #4CAF50;
     color: white;
   }
+
+/*******************************/
+/* Footer */
+/*******************************/
+
+footer {
+    background-color: #333;
+    padding: 50px;
+    font-size: 80%;
+    margin: 0px;
+    margin-top: 5px;
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+}
+
+.social-links {
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+    margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited, 
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #888;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: red;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+    font-size: 160%;
+}
+
+.facebook,
+.twitter,
+.github,
+.website {
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.facebook:hover {
+    color: #3b5998;
+}
+
+.twitter:hover {
+    color: #00aced;
+}
+
+.github:hover {
+    color: black;
+}
+
+.website:hover {
+    color: red;
+}
+
+footer p {
+    color: #888;
+    text-align: center;
+    margin: 0px 0px 0px 0px;
+}
+
+.clear_footer {
+    margin-top: 280px;
+    padding: 5px 20px;
+}
+
+/*******************************/
+/* Animation */
+/*******************************/
+.js--wp-1,
+.js--wp-2,
+.js--wp-3
+{
+    opacity: 0;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.js--wp-4 {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated {
+    opacity: 1;
+}

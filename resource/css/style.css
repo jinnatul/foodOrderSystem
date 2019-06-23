@@ -378,3 +378,51 @@ marquee h2 {
 marquee h2::after {
     background-color: #fff;
 }
+
+
+/*******************************/
+/* Top Reviews */
+/*******************************/
+
+.section-testimonials {
+    background-image:  -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/resource/img/back4.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/resource/img/back4.jpg);
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed;
+    background-position: center;
+    height: 110vh;
+}
+
+blockquote {
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+    margin-top: 20%;
+    color: #00ff00;
+    font-size: 120%;
+}
+
+blockquote::before {
+    content: "\201C";
+    font-size: 500%;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+}
+
+cite {
+    font-size: 90%;
+    margin-top: 25px;
+    display: block;
+    color: #ffff00;
+}
+
+cite img {
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}

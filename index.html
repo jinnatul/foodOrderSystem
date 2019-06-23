@@ -37,7 +37,7 @@
         <!--Marquee session-->
         <div>
             <marquee behavior="scroll" direction="left" onmousedown="this.stop();" onmouseup="this.start()">
-                <h5>Good Bye, Hungry, Welcome to Fresh Food Delevary System. Visit: morol1957.blogspot.com</h5>
+                <h4>Good Bye, Hungry, Welcome to Fresh Food Delevary System. Visit: morol1957.blogspot.com</h4>
             </marquee>
         </div>
 
@@ -192,7 +192,7 @@
 
 
     <!--Working Steps session-->
-    <section class="section-steps">
+    <section class="section-steps" id = "works">
 
         <div class="row">
             <h2>How it works &ndash; Simple 1, 2, 3</h2>
@@ -200,26 +200,29 @@
 
         <div class="row">
             <div class="col span_1_of_2 step-box">
-                <img src="/resource/img/phone.png" class="phone">
+                <img src="/resource/img/phone.png" class="phone js--wp-2">
 
             </div>
 
             <div class="col span_1_of_2 step-box">
                 
-                <div class="work-step">
+                <div class="work-step clear_Space">
                     <div>1</div>
                     <p>Choose the subscription plan that best fits your needs and sign up today.</p>
                 </div>
 
-                <div class="work-step">
+                <div class="work-step clear_Space">
                     <div>2</div>
                     <p>Order your delicious meal using our website. Or you can even call us!</p>
                 </div>
 
-                <div class="work-step">
+                <div class="work-step clear_Space">
                     <div>3</div>                           
                      <p>Enjoy your meal after less than 20 minutes. See you the next time!</p>
                 </div>
+
+                <a href="#" class="btn-app"><img src="/resource/img/download-app.svg" alt="App Store Button"></a>
+                <a href="#" class="btn-app "><img src="/resource/img/download-app-android.png" alt="Play Store Button"></a>
 
             </div>
 
@@ -229,69 +232,92 @@
 
 
     <!--Cities session-->
-    <section class="section-cities clear_Space">
-        <div class="row">
-            <h2>We're currently in these cities</h2>
-        </div>
-
-        <div class="row">
-
-            <!--Dhaka City Information-->
-            <div class="col span_1_of_4 box">
-                <img src="/resource/img/city1.png">
-                <h3>Dhaka</h3>
-                
-                <div class="city-feature">
-                    200+ happy eaters
-                </div>
-    
-                <div class="city-feature">
-                    10+ top chefs
-                </div>
-            </div>
-
-            <!--Cox's Bazar City Information-->
-            <div class="col span_1_of_4 box">
-                <img src="/resource/img/city2.png">
-                <h3>Cox's Bazar</h3>
-                    
-                <div class="city-feature">
-                    100+ happy eaters
-                </div>
+    <section class="section-cities" id="cities">
         
-                <div class="city-feature">
-                    5+ top chefs
-                </div>
+        
+        <div class="row js--wp-3 pic_rpw">
+
+
+            <div class="row">
+                <marquee behavior="scroll" direction="left" onmousedown="this.stop();" onmouseup="this.start()">
+                    <h2 id="marquee2">We're currently in these cities. Our cities information: 
+                        City name: Dhaka, 200+ happy eaters, 10+ top chefs.
+                        City name: Cox's Bazar, 100+ happy eaters, 5+ top chefs.
+                        City name: Sajek Valley, 50+ happy eaters, 5+ top chefs.
+                        City name: Sylhet, 80+ happy eaters, 8+ top chefs. Thanks for visit.
+                    </h2>
+                </marquee>
             </div>
 
-            <!--Sajek City Information-->
-            <div class="col span_1_of_4 box">
-                <img src="/resource/img/city3.png">
-                <h3>Sajek Valley</h3>
-                        
-                <div class="city-feature">
-                    50+ happy eaters
+            <div class="cities_row ">
+                
+                <!--Dhaka City Information-->
+                <div class="cities_col ">
+                    <img class="cities_img" src="/resource/img/city1.jpg">
+                    
+                    <h3 class="city_name"> <a class="city_link" target="_blank" href="https://en.wikipedia.org/wiki/Dhaka">Dhaka</a></h3>
+                
+                    <div class="city-feature">
+                        <ion-icon class="icon-small" name="person"></ion-icon>
+                        200+ happy eaters
+                    </div>
+                    <div class="city-feature">
+                        <ion-icon class="icon-small" name="star"></ion-icon>
+                        10+ top chefs
+                     </div>
                 </div>
             
-                <div class="city-feature">
-                    5+ top chefs
-                </div>
-            </div>
+                <!--Cox's Bazar City Information-->
+                <div class="cities_col">
+                    <img class="cities_img" src="/resource/img/city2.jpg">
 
-            <!--Sylhet City Information-->
-            <div class="col span_1_of_4 box">
-                <img src="/resource/img/city4.png">
-                <h3>Sylhet</h3>
+                    <h3 class="city_name"><a class="city_link" target="_blank" href="https://en.wikipedia.org/wiki/Cox%27s_Bazar">Cox's Bazar</a></h3>
+                    
+                    <div class="city-feature">
+                        <ion-icon class="icon-small" name="person"></ion-icon>
+                        100+ happy eaters
+                    </div>
+        
+                    <div class="city-feature">
+                        <ion-icon class="icon-small" name="star"></ion-icon>
+                        5+ top chefs
+                    </div>
+                </div>
                             
-                <div class="city-feature">
-                    80+ happy eaters
+                <!--Sajek City Information-->
+                <div class="cities_col">
+                    <img class="cities_img" src="/resource/img/city3.jpg">
+
+                    <h3 class="city_name"><a class="city_link" target="_blank" href = "https://en.wikipedia.org/wiki/Sajek_Valley">Sajek Valley</a> </h3>
+                        
+                    <div class="city-feature">
+                        <ion-icon class="icon-small" name="person"></ion-icon>
+                        50+ happy eaters
+                    </div>
+            
+                    <div class="city-feature">
+                        <ion-icon class="icon-small" name="star"></ion-icon>
+                        5+ top chefs
+                    </div>
                 </div>
+
+                <!--Sylhet City Information-->
+                <div class="cities_col">
+                    <img class="cities_img" src="/resource/img/city4.jpg">
+
+                    <h3 class="city_name"><a class="city_link" target="_blank" href = "https://en.wikipedia.org/wiki/Sylhet">Sylhet</a></h3>
+                            
+                    <div class="city-feature">
+                        <ion-icon class="icon-small" name="person"></ion-icon>
+                        80+ happy eaters
+                    </div>
                 
-                <div class="city-feature">
-                    8+ top chefs
+                    <div class="city-feature">
+                        <ion-icon class="icon-small" name="star"></ion-icon>
+                        8+ top chefs
+                    </div>
                 </div>
             </div>
-
         </div>
 
     </section>

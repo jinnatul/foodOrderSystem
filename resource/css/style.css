@@ -8,13 +8,15 @@
     box-sizing: border-box;
 }
 
-html { 
+html,
+body { 
     background-color: #fff;
     color: #555;
     font-family: 'Lato', 'Arial', sans-serif;
     font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility;
+    overflow-x: hidden;
 }
 
 .clear_Space {
@@ -37,7 +39,7 @@ html {
 }
 
 section {
-    padding: 50px;
+    padding: 80px 0;
 }
 
 .box {
@@ -67,13 +69,13 @@ h1 {
     margin-bottom: 20px;
     color: #fff;
     font-size: 240%;
-    word-spacing: 3px;
+    word-spacing: 4px;
     letter-spacing: 1px;
 }
 
 h2 {
     font-size: 180%;
-    word-spacing: 1px;
+    word-spacing: 2px;
     text-align: center;
     margin-bottom: 30px;
     letter-spacing: 1px;
@@ -92,8 +94,7 @@ h2::after {
     content: " ";
     width: 100px;
     margin: 0 auto;
-    margin-top: 15px;
-    
+    margin-top: 30px;
 }
 
 
@@ -108,16 +109,29 @@ h2::after {
 .box p {
     font-size: 90%;
     line-height: 145%;
-    font: 100;
 }
 
 
 /****** Icons *********/
 
 .icon_big {
-    font-size: 400%;
+    font-size: 350%;
     display: block;
     margin-bottom: 10px;
+}
+
+.icon-small {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: red;
+    font-size: 120%;
+    margin-right: 10px;
+    
+    /*secrets to align text and icons*/
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -5px;
 }
 
 
@@ -189,6 +203,7 @@ header {
     margin-top: 20px;
 }
 
+/* Main nav ver */
 .main_nav {
     float: right;
     list-style: none;
@@ -201,8 +216,8 @@ header {
 }
 
 .main_nav li a:link,
-.main_nav li a:visited {
-    
+.main_nav li a:visited,
+.city_link:link {    
     color: #fff;
     text-decoration: none;
     font-size: 110%;
@@ -211,10 +226,15 @@ header {
 }
 
 .main_nav li a:hover,
-.main_nav li a:checked {
+.main_nav li a:checked,
+.city_link:hover,
+.city_link:checked {
     border-bottom: 2px solid #00e600;
 }
 
+.section-features .long-copy {
+    margin-bottom: 30px;
+}
 
 /*******************************/
 /* Meals */
@@ -225,8 +245,7 @@ header {
 }
 
 .section-meals {
-    padding: 1;
-    margin: 0;
+    padding: 0;
 }
 
 .meals_row {
@@ -257,13 +276,17 @@ header {
 /* Working Steps */
 /*******************************/
 
-.step-box:first-child {
-    text-align: right;
-    padding-right: 3%;
+.steps-box {
     margin-top: 30px;
 }
 
+.step-box:first-child {
+    text-align: right;
+    padding-right: 3%;
+}
+
 .step-box:last-child {
+    text-align: left;
     padding-left: 3%;
     margin-top: 70px;
 }
@@ -274,6 +297,10 @@ header {
 
 .work-step {
     margin-bottom: 50px;
+}
+
+.works-step:last-of-type {
+    margin-bottom: 80px;
 }
 
 .work-step div {
@@ -290,10 +317,43 @@ header {
    margin-right: 25px;
 }
 
+.btn-app:link,
+.btn-app:visited {
+    border: 0;
+}
+
+.btn-app img {
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+}
 
 /*******************************/
 /* Cities */
 /*******************************/
+
+.cities_row {
+    width: 100%;
+    display: flex;
+    padding: 5px;
+}
+
+.cities_col {
+    width: 25%;
+    float: left;
+    overflow: hidden;
+}
+
+.cities_img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s;
+    transform: scale(1.15)
+}
+
+.cities_img:hover {
+    transform: scale(1)
+}
 
 .box img {
     width: 100%;
@@ -303,4 +363,18 @@ header {
 
 .city-feature {
     margin-bottom: 5px;
+}
+
+.city_name {
+    margin-top: 20px;
+}
+
+marquee h2 {
+    color: red;
+    background-color: #fff;
+    padding: 20px;
+}
+
+marquee h2::after {
+    background-color: #fff;
 }

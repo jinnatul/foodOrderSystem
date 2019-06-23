@@ -254,7 +254,7 @@ header {
 
 
 /*******************************/
-/* Steps */
+/* Working Steps */
 /*******************************/
 
 .step-box:first-child {
@@ -288,4 +288,19 @@ header {
    float: left;
    font-size: 150%;
    margin-right: 25px;
+}
+
+
+/*******************************/
+/* Cities */
+/*******************************/
+
+.box img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.city-feature {
+    margin-bottom: 5px;
 }

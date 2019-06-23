@@ -20,3 +20,9 @@
 
 # Add signup package
 ![add signup pack](https://user-images.githubusercontent.com/31995155/59980145-8156b880-9613-11e9-9257-2d3e0188a801.png)
+
+# Add contract
+![add commen](https://user-images.githubusercontent.com/31995155/59981740-d56c9780-9629-11e9-9d7b-adc8e210cfb7.png)
+
+# Add footer
+![add footer](https://user-images.githubusercontent.com/31995155/59981745-eddcb200-9629-11e9-8ee2-c6452d7952a9.png)

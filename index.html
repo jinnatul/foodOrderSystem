@@ -401,7 +401,7 @@
                     </div>
 
                     <div>
-                        <a href="#" class="btn btn-more">Sign up now</a>
+                        <a href="#" onclick="document.getElementById('popup_signup').style.display='block';" class="btn btn-more">Sign up now</a>
                     </div>
 
                 </div>
@@ -428,7 +428,7 @@
                     </div>
     
                     <div>
-                        <a href="#" class="btn btn-more">Sign up now</a>
+                        <a href="#" onclick="document.getElementById('popup_signup').style.display='block';" class="btn btn-more">Sign up now</a>
                     </div>
     
                 </div>
@@ -456,7 +456,7 @@
                     </div>
         
                     <div>
-                        <a href="#" class="btn btn-more">Sign up now</a>
+                        <a href="#" onclick="document.getElementById('popup_signup').style.display='block';" class="btn btn-more">Sign up now</a>
                     </div>
         
                 </div>
@@ -576,12 +576,12 @@
 <body>
     <button onclick="document.getElementById('popup_login').style.display='block'" id="myBtn" title="Log_In">+</button>
 
- <!--popup-->
+ <!--popup login-->
  <div class="pop_up">
 
     <div id="popup_login" class="modal">
  
-     <form class="modal-content animate" action="/action_page.php">
+     <form class="modal-content animate" action="">
        <div class="imgcontainer">
          <span onclick="document.getElementById('popup_login').style.display='none'" class="close" title="Close Modal">&times;</span>
          <img src="/resource/img/login.jpg" alt="Avatar" class="avatar">
@@ -592,16 +592,47 @@
          <input type="text" placeholder="Enter Username" name="uname" required>
          <input type="password" placeholder="Enter Password" name="psw" required>
            
-         <button id="submit_login" type="submit">Login</button>
+         <button class="submit_info" type="submit">Login</button>
          <label>
            <input type="checkbox" checked="checked" name="remember"> Remember me
          </label>
        </div>
    
        <div class="container" style="background-color:#f1f1f1">
-         <button type="button" onclick="document.getElementById('popup_login').style.display='none'; location.href='index.html#scrol_signup';"  class="btn_submit">Sign Up</button>
+         <button type="button" onclick="document.getElementById('popup_login').style.display='none'; location.href='index.html#scrol_signup';"  class="btn_submit btn_submit1">Sign Up</button>
          <span class="psw">Forgot <a href="#">password?</a></span>
        </div>
+     </form>
+   </div>
+ </div>
+
+
+
+<!--popup signin-->
+<div class="pop_up">
+
+    <div id="popup_signup" class="modal">
+ 
+     <form class="modal-content animate" action="">
+       <div class="imgcontainer">
+         <span onclick="document.getElementById('popup_signup').style.display='none'" class="close" title="Close Modal">&times;</span>
+         <img src="/resource/img/signup.jpg" alt="Avatar" class="avatar">
+       </div>
+   
+       <div class="container">
+
+         <input id="u_name" type="text" placeholder="Enter Username" name="uname" required>
+         <input id="u_password" type="password" placeholder="Enter Password" name="psw" required>
+         <input id="u_email" type="email" placeholder="Enter Email" name="email" required>
+           
+         <button class="submit_info" type="submit" onclick="document.getElementById('popup_signup').style.display='none';">Signup</button>
+
+       </div>
+
+        <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('popup_login').style.display='block'; document.getElementById('popup_signup').style.display='none'"  class="btn_submit btn_submit1">Log in</button>
+       </div>
+
      </form>
    </div>
  </div>

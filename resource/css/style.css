@@ -672,7 +672,7 @@ input[type=text], input[type=password] {
     padding-top: 16px;
   }
 
-  #submit_login {
+  .submit_info {
     background-color: #4CAF50;
     color: rgb(255, 255, 255);
     padding: 14px 20px;
@@ -682,7 +682,7 @@ input[type=text], input[type=password] {
     width: 100%;
   }
 
- #submit_login:hover {
+ #submit_info:hover {
     opacity: 0.8;
   }
   

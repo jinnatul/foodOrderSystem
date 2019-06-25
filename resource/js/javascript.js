@@ -18,3 +18,4 @@ setInterval( function() {
     document.getElementById("h3_color4").style.color = randomColor;
 
 }, 1000);
+

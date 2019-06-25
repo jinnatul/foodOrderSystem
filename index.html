@@ -11,7 +11,8 @@
     <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
     <script src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js"></script>
-    <script src="resource/js/index.js"></script>
+    <script src="resource/js/javascript.js"></script>
+    <script src="resource/js/jquery.js"></script>
     
     <link rel="icon" href="/resource/img/favicon.ico" type="image/ico" sizes="16x16">
 
@@ -27,10 +28,11 @@
             <div class="row">
                 <img src="/resource/img/logo_white.png" alt="Fresh Food Logo" class="logo">
                 <ul class="main_nav">
-                    <li><a href="#">Food Delivery</a></li>
-                    <li><a href="#">How it Work</a></li>
-                    <li><a href="#">Our Cities</a></li>
-                    <li><a href="#">Sign Up</a></li>
+                    <li><a href="#scrol_delivery">Food Delivery</a></li>
+                    <li><a href="#scrol_food">Our Foods</a></li>
+                    <li><a href="#scrol_work">How it Work</a></li>
+                    <li><a href="#scrol_cities">Our Cities</a></li>
+                    <li><a href="#scrol_signup">Sign Up</a></li>
                 </ul> 
             </div>
         </nav>
@@ -51,7 +53,7 @@
     
 
     <!--Features session-->
-    <section class="section-features clear_Space">
+    <section class="section-features clear_Space"  id="scrol_delivery">
        
         <div class="row">
         <h2>Get food fast &mdash; Testy Fresh food</h2>
@@ -136,7 +138,7 @@
 
 
     <!--Meals session-->
-    <section class="section-meals">
+    <section class="section-meals" id="scrol_food">
 
         <div>
             <h2 id="meals_title">Our Fresh Food Items:</h2>
@@ -193,7 +195,7 @@
 
 
     <!--Working Steps session-->
-    <section class="section-steps" id = "works">
+    <section class="section-steps" id = "scrol_work">
 
         <div class="row">
             <h2>How it works &ndash; Simple 1, 2, 3</h2>
@@ -233,7 +235,7 @@
 
 
     <!--Cities session-->
-    <section class="section-cities" id="cities">
+    <section class="section-cities" id="scrol_cities">
         
         
         <div class="row pic_rpw">
@@ -372,7 +374,7 @@
     </section>
 
     <!--SignUp Plain Sections-->
-    <section class="section-plans">
+    <section class="section-plans" id="scrol_signup">
         <div class="row">
             <h2>Start eating Freshfood today</h2>
         </div>
@@ -565,6 +567,45 @@
        </div>
     </footer>
 </section>
+
+
+
+<!--LOgin and Popup session-->
+
+<!--LOgin Button-->
+<body>
+    <button onclick="document.getElementById('popup_login').style.display='block'" id="myBtn" title="Log_In">+</button>
+
+ <!--popup-->
+ <div class="pop_up">
+
+    <div id="popup_login" class="modal">
+ 
+     <form class="modal-content animate" action="/action_page.php">
+       <div class="imgcontainer">
+         <span onclick="document.getElementById('popup_login').style.display='none'" class="close" title="Close Modal">&times;</span>
+         <img src="/resource/img/login.jpg" alt="Avatar" class="avatar">
+       </div>
+   
+       <div class="container">
+
+         <input type="text" placeholder="Enter Username" name="uname" required>
+         <input type="password" placeholder="Enter Password" name="psw" required>
+           
+         <button id="submit_login" type="submit">Login</button>
+         <label>
+           <input type="checkbox" checked="checked" name="remember"> Remember me
+         </label>
+       </div>
+   
+       <div class="container" style="background-color:#f1f1f1">
+         <button type="button" onclick="document.getElementById('popup_login').style.display='none'; location.href='index.html#scrol_signup';"  class="btn_submit">Sign Up</button>
+         <span class="psw">Forgot <a href="#">password?</a></span>
+       </div>
+     </form>
+   </div>
+ </div>
+
 </body>
 
 </html>

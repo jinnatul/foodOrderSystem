@@ -28,7 +28,17 @@
   border: 8px solid #fff;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
-.ih-item.square .info {
+
+.ih-item.square_city {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #fff;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.ih-item.square .info, 
+.ih-item.square_city .info {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -39,22 +49,27 @@
   backface-visibility: hidden;
 }
 
-.ih-item.square.effect8 {
+.ih-item.square.effect8, 
+.ih-item.square_city.effect8 {
   overflow: hidden;
 }
-.ih-item.square.effect8.colored .info {
+.ih-item.square.effect8.colored .info, 
+.ih-item.square_city.effect8.colored .info  {
   background: #1a4a72;
 }
-.ih-item.square.effect8.colored .info h3 {
+.ih-item.square.effect8.colored .info h3,
+.ih-item.square_city.effect8.colored .info h3 {
   background: rgba(12, 34, 52, 0.6);
 }
-.ih-item.square.effect8 .img {
+.ih-item.square.effect8 .img,
+.ih-item.square_city.effect8 .img {
   opacity: 1;
   -webkit-transition: all 0.35s ease-in-out;
   -moz-transition: all 0.35s ease-in-out;
   transition: all 0.35s ease-in-out;
 }
-.ih-item.square.effect8 .info {
+.ih-item.square.effect8 .info,
+.ih-item.square_city.effect8 .info {
   background: #333333;
   visibility: hidden;
   opacity: 0;
@@ -62,7 +77,8 @@
   -moz-transition: all 0.35s ease-in-out;
   transition: all 0.35s ease-in-out;
 }
-.ih-item.square.effect8 .info h3 {
+.ih-item.square.effect8 .info h3,
+.ih-item.square_city.effect8 .info h3  {
   text-transform: uppercase;
   color: #fff;
   text-align: center;
@@ -74,7 +90,8 @@
   -moz-transition: all 0.35s 0.1s ease-in-out;
   transition: all 0.35s 0.1s ease-in-out;
 }
-.ih-item.square.effect8 .info p {
+.ih-item.square.effect8 .info p,
+.ih-item.square_city.effect8 .info p {
   font-size: 22px;
   position: relative;
   color: #bbb;
@@ -84,22 +101,26 @@
   -moz-transition: all 0.35s 0.15s linear;
   transition: all 0.35s 0.15s linear;
 }
-.ih-item.square.effect8 a:hover .img {
+.ih-item.square.effect8 a:hover .img,
+.ih-item.square_city.effect8 a:hover .img {
   opacity: 0;
 }
-.ih-item.square.effect8 a:hover .info {
+.ih-item.square.effect8 a:hover .info,
+.ih-item.square_city.effect8 a:hover .info {
   visibility: visible;
   opacity: 1;
 }
 
-.ih-item.square.effect8.scale_up .img {
+.ih-item.square.effect8.scale_up .img,
+.ih-item.square_city.effect8.scale_up .img {
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
   -ms-transform: scale(1);
   -o-transform: scale(1);
   transform: scale(1);
 }
-.ih-item.square.effect8.scale_up .info {
+.ih-item.square.effect8.scale_up .info,
+.ih-item.square_city.effect8.scale_up .info {
   -webkit-transform: scale(0);
   -moz-transform: scale(0);
   -ms-transform: scale(0);
@@ -107,21 +128,25 @@
   transform: scale(0);
 }
 .ih-item.square.effect8.scale_up .info h3,
-.ih-item.square.effect8.scale_up .info p {
+.ih-item.square.effect8.scale_up .info p,
+.ih-item.square_city.effect8.scale_up .info h3,
+.ih-item.square_city.effect8.scale_up .info p {
   -webkit-transform: scale(0);
   -moz-transform: scale(0);
   -ms-transform: scale(0);
   -o-transform: scale(0);
   transform: scale(0);
 }
-.ih-item.square.effect8.scale_up a:hover .img {
+.ih-item.square.effect8.scale_up a:hover .img,
+.ih-item.square_city.effect8.scale_up a:hover .img {
   -webkit-transform: scale(5);
   -moz-transform: scale(5);
   -ms-transform: scale(5);
   -o-transform: scale(5);
   transform: scale(5);
 }
-.ih-item.square.effect8.scale_up a:hover .info {
+.ih-item.square.effect8.scale_up a:hover .info,
+.ih-item.square_city.effect8.scale_up a:hover .info {
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
   -ms-transform: scale(1);
@@ -129,7 +154,9 @@
   transform: scale(1);
 }
 .ih-item.square.effect8.scale_up a:hover .info h3,
-.ih-item.square.effect8.scale_up a:hover .info p {
+.ih-item.square.effect8.scale_up a:hover .info p,
+.ih-item.square_city.effect8.scale_up a:hover .info h3,
+.ih-item.square_city.effect8.scale_up a:hover .info p  {
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
   -ms-transform: scale(1);

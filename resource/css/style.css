@@ -216,8 +216,7 @@ header {
 }
 
 .main_nav li a:link,
-.main_nav li a:visited,
-.city_link:link {    
+.main_nav li a:visited {    
     color: #fff;
     text-decoration: none;
     font-size: 110%;
@@ -226,9 +225,7 @@ header {
 }
 
 .main_nav li a:hover,
-.main_nav li a:checked,
-.city_link:hover,
-.city_link:checked {
+.main_nav li a:checked {
     border-bottom: 2px solid #00e600;
 }
 

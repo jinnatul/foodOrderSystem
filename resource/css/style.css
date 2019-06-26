@@ -240,6 +240,12 @@ header {
 /* Meals */
 /*******************************/
 
+/* Display details img */
+#divIntro {
+    width: auto;
+    display: none;
+}
+
 #meals_title {
     text-align: center;
 }
@@ -258,17 +264,6 @@ header {
     width: 33.33%;
     float: left;
     overflow: hidden;
-}
-
-.meal_img {
-    width: 100%;
-    height: auto;
-    transition: transform 0.5s;
-    transform: scale(1.15)
-}
-
-.meal_img:hover {
-    transform: scale(1)
 }
 
 

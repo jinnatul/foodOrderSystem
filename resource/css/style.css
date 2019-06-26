@@ -767,3 +767,20 @@ input[type=text], input[type=password] {
   #myBtn:hover {
     background-color: rgb(243, 0, 0);
   }
+
+ /*  Home scrolling button  */
+  #go_btn {
+    position: fixed;
+    bottom: 90px;
+    right: 8px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    border-radius: 50%;
+    width: 7.5%;
+    height: 16%;
+  }

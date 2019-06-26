@@ -19,3 +19,22 @@ setInterval( function() {
 
 }, 1000);
 
+
+
+/* Button scrolling */
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+    document.getElementById("go_btn").style.display = "block";
+  } else {
+    document.getElementById("go_btn").style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}

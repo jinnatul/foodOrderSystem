@@ -10,7 +10,7 @@
 
 html,
 body { 
-    background-color: #fff;
+    background-color: #f4f4f4;
     color: #555;
     font-family: 'Lato', 'Arial', sans-serif;
     font-weight: 300;
@@ -29,6 +29,11 @@ body {
     height: 0;
     visibility: hidden;
 }
+
+
+/* Circle shape mouse*/
+
+
 /*******************************/
 /* Reuseable Component */
 /*******************************/
@@ -55,6 +60,9 @@ marquee {
     color: #00e600;
 }
 
+#marquee2 {
+    background-color: #f4f4f4;
+}
 
 /****** Heading *********/
 
@@ -67,7 +75,7 @@ h3 {
 h1 {
     margin-top: 0;
     margin-bottom: 20px;
-    color: #fff;
+    color: rgb(0, 247, 214);
     font-size: 240%;
     word-spacing: 4px;
     letter-spacing: 1px;
@@ -149,7 +157,7 @@ h2::after {
 
 .btn-hangry:link,
 .btn-hangry:visited {
-    background-color: #e67e22;
+    background-color: #97b900;
     border: 1px solid #e67e22;
     margin-right: 15px;
 }
@@ -157,17 +165,17 @@ h2::after {
 .btn-more:link,
 .btn-more:visited {
     border: 1px solid #e67e22;
-    color: #e67e22;
+    color: #00e0fd;
 }
 
 .btn:hover,
 .btn:active {
-    background-color: #cf6d17;
+    background-color: #00f08c;
 }
 
 .btn-hangry:hover,
 .btn-hangry:active {
-    border: 1px solid #fff;
+    border: 1px solid rgb(0, 0, 0);
 }
 
 .btn-more:hover,
@@ -181,10 +189,17 @@ h2::after {
 /* Header */
 /*******************************/
 
+.video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: 100hv;
+}
+
 header {
-    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(/resource//css//img//back2.jpg);
-    background-size: cover;
-    background-position: center;
     height: 100vh;
 }
 
@@ -200,7 +215,8 @@ header {
     height: 100px;
     width: auto;
     float: left;
-    margin-top: 20px;
+    margin: 20px;
+    position: absolute;
 }
 
 /* Main nav ver */
@@ -208,6 +224,7 @@ header {
     float: right;
     list-style: none;
     margin-top: 55px;
+    position: relative;
 }
 
 .main_nav li {
@@ -217,11 +234,12 @@ header {
 
 .main_nav li a:link,
 .main_nav li a:visited {    
-    color: #fff;
+    color: rgb(0, 183, 255);
     text-decoration: none;
-    font-size: 110%;
+    font-size: 120%;
     border-bottom: 2px solid transparent;
     transition: border-bottom 0.2s;
+    font-weight: 400;
 }
 
 .main_nav li a:hover,
@@ -425,25 +443,25 @@ cite img {
 /*******************************/
 
 .section-plans {
-    background-color: #f4f4f4;
+    background-color: #f8f8f8;
 }
 
 .plan-box {
-    background-color: #b1eeae;
+    background-color:  #6f7e7d;
     border-radius: 5px;
     width: 90%;
     margin-left: 7%;
-    box-shadow: 0 2px 2px #b1eeae;
+    box-shadow: 0 2px 2px  #6f7e7d;
     margin: 50px;  /* down free space */
 }
 
 .plan-box div {
     padding: 15px;
-    border-bottom: 1px solid #b1eeae;
+    border-bottom: 1px solid  #6f7e7d;
 }
 
 .plan-box div:first-child {
-    background-color: #b1eeae;
+    background-color: #6f7e7d;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
@@ -462,11 +480,12 @@ cite img {
 
 .plan-price-meal {
     font-size: 100%;
-    color: rgb(255, 0, 191);
+    color: rgb(0, 204, 255);
 }
 
 .plan-box ul {
     list-style: none;
+    color: #00e600;
 }
 
 .plan-box ul li {

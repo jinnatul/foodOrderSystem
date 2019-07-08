@@ -49,6 +49,10 @@
   backface-visibility: hidden;
 }
 
+
+
+/* Effect 8 Square */
+
 .ih-item.square.effect8, 
 .ih-item.square_city.effect8 {
   overflow: hidden;
@@ -82,7 +86,7 @@
   text-transform: uppercase;
   color: #fff;
   text-align: center;
-  font-size: 25px;
+  font-size: 30px;
   padding: 10px;
   background: #111111;
   margin: 30px 0 0 0;
@@ -92,9 +96,9 @@
 }
 .ih-item.square.effect8 .info p,
 .ih-item.square_city.effect8 .info p {
-  font-size: 22px;
+  font-size: 25px;
   position: relative;
-  color: #bbb;
+  color: rgb(8, 243, 0);
   padding: 20px 20px 20px;
   text-align: center;
   -webkit-transition: all 0.35s 0.15s linear;
@@ -162,4 +166,142 @@
   -ms-transform: scale(1);
   -o-transform: scale(1);
   transform: scale(1);
+}
+
+
+
+
+/* Effect 4 Square */
+
+.ih-item.square.effect4 {
+  overflow: hidden;
+  position: relative;
+}
+.ih-item.square.effect4.colored .info {
+  background: rgba(12, 34, 52, 0.6);
+}
+.ih-item.square.effect4.colored .mask1,
+.ih-item.square.effect4.colored .mask2 {
+  background: #1a4a72;
+  background: rgba(26, 74, 114, 0.6);
+}
+.ih-item.square.effect4 .img {
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.ih-item.square.effect4 .mask1,
+.ih-item.square.effect4 .mask2 {
+  position: absolute;
+  background: #333333;
+  background: rgba(0, 0, 0, 0.6);
+  height: 361px;
+  width: 361px;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.ih-item.square.effect4 .mask1 {
+  left: auto;
+  right: 0;
+  top: 0;
+  -webkit-transform: rotate(56.5deg) translateX(-180px);
+  -moz-transform: rotate(56.5deg) translateX(-180px);
+  -ms-transform: rotate(56.5deg) translateX(-180px);
+  -o-transform: rotate(56.5deg) translateX(-180px);
+  transform: rotate(56.5deg) translateX(-180px);
+  -webkit-transform-origin: 100% 0%;
+  -moz-transform-origin: 100% 0%;
+  -ms-transform-origin: 100% 0%;
+  -o-transform-origin: 100% 0%;
+  transform-origin: 100% 0%;
+}
+.ih-item.square.effect4 .mask2 {
+  top: auto;
+  bottom: 0;
+  left: 0;
+  -webkit-transform: rotate(56.5deg) translateX(180px);
+  -moz-transform: rotate(56.5deg) translateX(180px);
+  -ms-transform: rotate(56.5deg) translateX(180px);
+  -o-transform: rotate(56.5deg) translateX(180px);
+  transform: rotate(56.5deg) translateX(180px);
+  -webkit-transform-origin: 0% 100%;
+  -moz-transform-origin: 0% 100%;
+  -ms-transform-origin: 0% 100%;
+  -o-transform-origin: 0% 100%;
+  transform-origin: 0% 100%;
+}
+.ih-item.square.effect4 .info {
+  background: #111111;
+  height: 0;
+  visibility: hidden;
+  width: 361px;
+  -webkit-transform: rotate(-33.5deg) translate(-112px, 166px);
+  -moz-transform: rotate(-33.5deg) translate(-112px, 166px);
+  -ms-transform: rotate(-33.5deg) translate(-112px, 166px);
+  -o-transform: rotate(-33.5deg) translate(-112px, 166px);
+  transform: rotate(-33.5deg) translate(-112px, 166px);
+  -webkit-transform-origin: 0% 100%;
+  -moz-transform-origin: 0% 100%;
+  -ms-transform-origin: 0% 100%;
+  -o-transform-origin: 0% 100%;
+  transform-origin: 0% 100%;
+  -webkit-transition: all 0.35s ease-in-out 0.35s;
+  -moz-transition: all 0.35s ease-in-out 0.35s;
+  transition: all 0.35s ease-in-out 0.35s;
+}
+.ih-item.square.effect4 .info h3 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+  padding: 10px;
+  background: transparent;
+  margin-top: 5px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  opacity: 0;
+  -webkit-transition: all 0.35s ease-in-out 0.35s;
+  -moz-transition: all 0.35s ease-in-out 0.35s;
+  transition: all 0.35s ease-in-out 0.35s;
+}
+.ih-item.square.effect4 .info p {
+  font-style: bold;
+  font-size: 25px;
+  position: relative;
+  color: rgb(21, 255, 0);
+  bottom: 25px;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: all 0.35s ease-in-out 0.35s;
+  -moz-transition: all 0.35s ease-in-out 0.35s;
+  transition: all 0.35s ease-in-out 0.35s;
+}
+.ih-item.square.effect4 a:hover .mask1 {
+  -webkit-transform: rotate(56.5deg) translateX(1px);
+  -moz-transform: rotate(56.5deg) translateX(1px);
+  -ms-transform: rotate(56.5deg) translateX(1px);
+  -o-transform: rotate(56.5deg) translateX(1px);
+  transform: rotate(56.5deg) translateX(1px);
+}
+.ih-item.square.effect4 a:hover .mask2 {
+  -webkit-transform: rotate(56.5deg) translateX(-1px);
+  -moz-transform: rotate(56.5deg) translateX(-1px);
+  -ms-transform: rotate(56.5deg) translateX(-1px);
+  -o-transform: rotate(56.5deg) translateX(-1px);
+  transform: rotate(56.5deg) translateX(-1px);
+}
+.ih-item.square.effect4 a:hover .info {
+  width: 420px;
+  height: 150px;
+  visibility: visible;
+  top: 40px;
+  -webkit-transform: rotate(0deg) translate(0, 0);
+  -moz-transform: rotate(0deg) translate(0, 0);
+  -ms-transform: rotate(0deg) translate(0, 0);
+  -o-transform: rotate(0deg) translate(0, 0);
+  transform: rotate(0deg) translate(0, 0);
+}
+.ih-item.square.effect4 a:hover .info h3,
+.ih-item.square.effect4 a:hover .info p {
+  opacity: 1;
 }

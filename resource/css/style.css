@@ -30,6 +30,18 @@ body {
     visibility: hidden;
 }
 
+/* Clock */
+.clock {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: rgb(255, 72, 0);
+    font-size: 60px;
+    font-family: Orbitron;
+    letter-spacing: 7px;
+}
+
 
 /* Circle shape mouse*/
 

@@ -17,11 +17,14 @@
     <link rel="stylesheet" type="text/css" href="/resource/css/responsive_design.css">
     <link rel="stylesheet" type="text/css" href="/vendors/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="/vendors/css/grid.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
     
 
     <!--js files-->
     <script src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js"></script>
     <script src="resource/js/javascript.js"></script>
+
     
     <!--Page icon-->
     <link rel="icon" href="/resource/img/favicon.ico" type="image/ico" sizes="16x16">
@@ -31,23 +34,23 @@
 <body>
 
     <!--Header session-->
-    <header>
+    <header class="js_header">
 
         <video class="video" autoplay loop muted>
             <source src="/resource/img/back_video.mp4" type="video/mp4">
         </video>
        
-        <img src="/resource/img/logo_white.png" alt="Fresh Food Logo" class="logo">
+        <img src="/resource/img/logo_white.png" alt="Fresh Food Logo" class="logo wow fadeInLeft">
 
         <!--nav ver session-->
         <nav>
             <div class="row">
-                <ul class="main_nav">
+                <ul class="main_nav wow fadeInRight">
                     <li><a href="#scrol_delivery">Food Delivery</a></li>
                     <li><a href="#scrol_food">Our Foods</a></li>
                     <li><a href="#scrol_work">How it Work</a></li>
                     <li><a href="#scrol_cities">Our Cities</a></li>
-                    <li><a href="#scrol_signup">Sign Up</a></li>
+                    <li><a href="#" class="js--scroll-to-plans">Sign Up</a></li>
                 </ul> 
             </div>
         </nav>
@@ -61,19 +64,16 @@
 
         <div class="hero-text-box">
             <h1>Good Bye, Hungry.<br> Hello, Super Tasty Meals.</h1>
-            <a class="btn btn-hangry" href="#scrol_signup">I’m Hungry</a>
-            <a class="btn btn-more" href="#scrol_delivery">Show Me More</a>
+            <a class="btn btn-hangry js--scroll-to-plans" href="#">I’m Hungry</a>
+            <a class="btn btn-more js--scroll-to-start" href="#">Show Me More</a>
         </div>
     </header>
-    
-    <iframe scrolling="no" frameborder="no" clocktype="html5" style="overflow:hidden;border:0;margin:0;padding:0;width:300px;height:75px;"
-            src="https://www.clocklink.com/html5embed.php?clock=038&timezone=Bangladesh_Dhaka&color=gray&size=300&Title=&Message=&Target=&From=2019,1,1,0,0,0&Color=gray">
-    </iframe>
+
     
     <!--Features session-->
-    <section class="section-features clear_Space"  id="scrol_delivery">
+    <section class="section-features clear_Space js--section-features"  id="scrol_delivery">
        
-        <div class="row">
+        <div class="row wow fadeInDown">
         <h2>Get food fast &mdash; Testy Fresh food</h2>
 
         <p class="long-copy">
@@ -83,7 +83,7 @@
         </p>
         </div>
 
-        <div class="row">
+        <div class="row wow fadeInLeft">
             
             <!--Section 1-->
             <div class="col span_1_of_4 box">
@@ -159,14 +159,14 @@
     <section class="section-meals" id="scrol_food">
 
         <div>
-            <h2 id="meals_title">Our Fresh Food Items:</h2>
+            <h2 class="wow zoomIn" id="meals_title">Our Fresh Food Items:</h2>
         </div>
 
         <!--Imag description-->
         
 
         <!--1, 2, 3 meals 1st row-->
-        <div class="meals_row">
+        <div class="meals_row wow fadeInDown">
             
             <div class="meal_col">                
             <!-- colored -->
@@ -217,7 +217,7 @@
 
 
         <!--4, 5, 6 meals 2nd row-->
-        <div class="meals_row ">
+        <div class="meals_row wow fadeInLeft">
              
         <div class="meal_col">                
         <!-- colored -->
@@ -269,7 +269,7 @@
 
 
         <!--7, 8, 9 meals 3rd row-->
-        <div class="meals_row ">
+        <div class="meals_row wow fadeInRight">
 
             <div class="meal_col">                
             <!-- colored -->
@@ -325,17 +325,17 @@
     <section class="section-steps" id = "scrol_work">
         
         <div class="row">
-            <h2>How it works &ndash; Simple 1, 2, 3</h2>
+            <h2 class="wow zoomIn">How it works &ndash; Simple 1, 2, 3</h2>
         </div>
 
         <div class="row">
             <div class="col span_1_of_2 step-box">
-                <img src="/resource/img/phone.png" class="phone">
+                <img src="/resource/img/phone.png" class="phone wow fadeInLeft">
             </div>
 
             
 
-            <div class="col span_1_of_2 step-box">
+            <div class="col span_1_of_2 step-box wow fadeInRight">
                 
                 <div class="work-step clear_Space">
                     <div>1</div>
@@ -380,7 +380,7 @@
                 </marquee>
             </div>
 
-            <div class="cities_row ">
+            <div class="cities_row wow fadeInRight">
                 
                 <!--Dhaka City Information-->
                 <div class="cities_col ">
@@ -444,16 +444,16 @@
 
 
     <!--Testimonials section-->
-    <section class="section-testimonials">
+    <section class="section-testimonials wow fadeInLeft">
 
         <div class="row">
-            <h2>Our customers can't live without us</h2>
+            <h2 class="wow zoomIn">Our customers can't live without us</h2>
         </div>
 
         <div class="row">
 
             <!--Customer 1 reviews-->
-            <div class="col span_1_of_3">
+            <div class="col span_1_of_3 wow fadeInUp">
                 <blockquote>
                         Fresh Food is just awesome! I just launched a startup which leaves me 
                         with no time for cooking, so FreshFood is a life-saver. Now that I got 
@@ -465,7 +465,7 @@
             </div>
 
             <!--Customer 2 reviews-->
-            <div class="col span_1_of_3">
+            <div class="col span_1_of_3 wow fadeInDown">
                 <blockquote> 
                         Inexpensive, healthy and great-tasting meals, delivered right to my home. 
                         We have lots of food delivery here in Dhaka, but no one comes even close to Freshfood. 
@@ -476,7 +476,7 @@
             </div>
 
             <!--Customer 3 reviews-->
-            <div class="col span_1_of_3">
+            <div class="col span_1_of_3 wow fadeInUp">
                 <blockquote>
                         I was looking for a quick and easy food delivery service in Dhaka. 
                         I tried a lot of them and ended up with Freshfood. Best food delivery 
@@ -491,16 +491,16 @@
     </section>
 
     <!--SignUp Plain Sections-->
-    <section class="section-plans" id="scrol_signup">
+    <section class="section-plans js--section-plans" >
         <div class="row">
-            <h2>Start eating Freshfood today</h2>
+            <h2 class="wow zoomIn">Start eating Freshfood today</h2>
         </div>
 
         <div class="row">
            
             <!--Premium customers-->
             <div class="col span_1_of_3">
-                <div class="plan-box">
+                <div class="plan-box wow fadeInDown">
                     <div>
                         <h3 class="head_col"><u>Premium Pack</u></h3>
                         <p class="plan-price">3600Tk <span>/ month</span></p>
@@ -527,7 +527,7 @@
 
             <!--Pre customers-->
             <div class="col span_1_of_3">
-                <div class="plan-box">
+                <div class="plan-box wow fadeInLeft">
                     <div>
                         <h3 class="head_col"><u>Pro Pack</u></h3>
                         <p class="plan-price">1300Tk <span>/ month</span></p>
@@ -555,7 +555,7 @@
 
             <!--Normal customers-->
             <div class="col span_1_of_3">
-                <div class="plan-box">
+                <div class="plan-box wow fadeInRight">
                     <div>
                         <h3 class="head_col"><u>Normal Pack</u></h3>
                         <p class="plan-price">140Tk <span>/ meal</span></p>
@@ -587,10 +587,10 @@
     <!--Contract section-->
     <section class="section-form">
         <div class="row">
-            <h2>We're happy to hear from you</h2>
+            <h2 class="wow zoomIn">We're happy to hear from you</h2>
         </div>
     
-        <div class="row">
+        <div class="row wow fadeInRight">
             <form method="post" action="#" class="contact-form">
                 
                 <!--Input Name-->
@@ -755,7 +755,19 @@
  </div>
 
 <!--Scrolling button-->
- <button onclick="topFunction()"  title="Go to Home"><img id="go_btn" src="/resource/img/top.png"></button>
+ <button class="js_top"  title="Go to Home"><img id="go_btn" src="/resource/img/top.png"></button>
+
+
+   <!--Java script --->
+ 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+    <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+    <script src="resource/js/jquery.js"></script>
+    <script src="/vendors/js/wow.min.js"></script>
+    <script> new WOW().init(); </script>
 
 </body>
 

@@ -30,21 +30,6 @@ body {
     visibility: hidden;
 }
 
-/* Clock */
-.clock {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    color: rgb(255, 72, 0);
-    font-size: 60px;
-    font-family: Orbitron;
-    letter-spacing: 7px;
-}
-
-
-/* Circle shape mouse*/
-
 
 /*******************************/
 /* Reuseable Component */
@@ -235,7 +220,7 @@ header {
 .main_nav {
     float: right;
     list-style: none;
-    margin-top: 55px;
+    margin-top: 20px;
     position: relative;
 }
 
@@ -246,7 +231,7 @@ header {
 
 .main_nav li a:link,
 .main_nav li a:visited {    
-    color: rgb(0, 183, 255);
+    color: rgb(34, 202, 0);
     text-decoration: none;
     font-size: 120%;
     border-bottom: 2px solid transparent;
@@ -256,12 +241,13 @@ header {
 
 .main_nav li a:hover,
 .main_nav li a:checked {
-    border-bottom: 2px solid #00e600;
+    border-bottom: 2px solid #01f3fc;
 }
 
 .section-features .long-copy {
     margin-bottom: 30px;
 }
+
 
 /*******************************/
 /* Meals */
@@ -807,3 +793,7 @@ input[type=text], input[type=password] {
     width: 7.5%;
     height: 16.8%;
   }
+
+
+
+/* Animations */

@@ -1,0 +1,19 @@
+{
+  "name": "food",
+  "version": "1.0.0",
+  "description": "# Add Header ![add header and nev](https://user-images.githubusercontent.com/31995155/59962094-998ae280-9502-11e9-8cc9-bc0e8c0b5fbc.png)",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jinnatul/Food-order-system.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jinnatul/Food-order-system/issues"
+  },
+  "homepage": "https://github.com/jinnatul/Food-order-system#readme"
+}

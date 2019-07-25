@@ -50,7 +50,7 @@ app.post('/sign_up', (req, res) =>{
 });
 
 
-app.post('/', (req, res) =>{
+app.post('/log_in', (req, res) =>{
    //var email = req.body.__email;
    //var pass = req.body.__password;
    
@@ -58,19 +58,24 @@ app.post('/', (req, res) =>{
     if(err) throw err;
 
     var dbName = db.db("food_system");
-    //var hashedPass = passwordHash.generate(req.body.__password);
     
     dbName.collection('customers').findOne({ email: req.body.__email}, function(err, user) {
         console.log('User found ');
         // In case the user not found
         if(passwordHash.verify(req.body.__password, user.password)){
-            //res.send("Yes");
-            res.redirect('user.html')
+            if (!err) {
+                db.close();
+                return res.redirect('user.html');
+                
+            }
+            else{
+                alert("Wrong UserName/Password !!!")
+            }
         }  
-        else{
-            res.send("NO " + " " + req.body.__password + " " + user.password);
-        }
+        
+        //res.send("NO " + " " + req.body.__password + " " + user.password);
     });
 
    });
+   
 });

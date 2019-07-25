@@ -63,7 +63,7 @@
 
         <div class="hero-text-box">
             <h1>Good Bye, Hungry.<br> Hello, Super Tasty Meals.</h1>
-            <a class="btn btn-hangry js--scroll-to-plans" href="#">I’m Hungry</a>
+            <a class="btn btn-hangry" href="/front_end/signup.html">I’m Hungry</a>
             <a class="btn btn-more js--scroll-to-start" href="#">Show Me More</a>
         </div>
     </header>
@@ -591,74 +591,6 @@
     </footer>
 </section>
 
-
-
-<!--LOgin and Popup session-->
-
-<!--LOgin Button-->
-<body>
-    <button onclick="document.getElementById('popup_login').style.display='block'" title="Log_In"><img id="myBtn" src="/resource/img/login_icon_add.png"></button>
-
- <!--popup login-->
- <div class="pop_up">
-
-    <div id="popup_login" class="modal">
- 
-     <form class="modal-content animate" action="/" method="POST">
-       <div class="imgcontainer">
-         <span onclick="document.getElementById('popup_login').style.display='none'" class="close" title="Close Modal">&times;</span>
-         <img src="/resource/img/login.jpg" alt="Avatar" class="avatar">
-       </div>
-   
-       <div class="container">
-
-         <input type="email" placeholder="Enter Email" name="__email" required>
-         <input type="password" placeholder="Enter Password" name="__password" required>
-           
-         <button class="submit_info" type="submit">Login</button>
-         <label>
-           <input type="checkbox" checked="checked" name="remember"> Remember me
-         </label>
-       </div>
-   
-       <div class="container" style="background-color:#f1f1f1">
-         <button type="button" onclick="document.getElementById('popup_login').style.display='none'; location.href='#scrol_signup';"  class="btn_submit btn_submit1 js--scroll-to-plans">Sign Up</button>
-         <span class="psw">Forgot <a href="#">password?</a></span>
-       </div>
-     </form>
-   </div>
- </div>
-
-
-
-<!--popup signUp-->
-<div class="pop_up">
-
-    <div id="popup_signup" class="modal">
- 
-     <form class="modal-content animate" action="/" method="POST">
-       <div class="imgcontainer">
-         <span onclick="document.getElementById('popup_signup').style.display='none'" class="close" title="Close Modal">&times;</span>
-         <img src="/resource/img/signup.jpg" alt="Avatar" class="avatar">
-       </div>
-   
-       <div class="container">
-
-         <input id="u_name" type="text" placeholder="Enter Username" name="__name" required>
-         <input id="u_password" type="password" placeholder="Enter Password" name="__password" required>
-         <input id="u_email" type="email" placeholder="Enter Email" name="__email" required>
-           
-         <button class="submit_info" type="submit" onclick="document.getElementById('popup_signup').style.display='none'; document.getElementById('popup_login').style.display='block';">Signup</button>
-
-       </div>
-
-        <div class="container" style="background-color:#f1f1f1">
-            <button type="button" onclick="document.getElementById('popup_login').style.display='block'; document.getElementById('popup_signup').style.display='none'"  class="btn_submit btn_submit1">Log in</button>
-       </div>
-
-     </form>
-   </div>
- </div>
 
 <!--Scrolling button-->
  <button class="js_top"  title="Go to Home"><img id="go_btn" src="/resource/img/top.png"></button>

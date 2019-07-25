@@ -11,14 +11,19 @@
         <img src="/resource/css/img/people_icon.png" alt ="Alternate Text" class="user" />
         <h2>Log In Here</h2>
 
-        <form autocomplete="off" action="/" method="POST">
+        <form autocomplete="off" action="/log_in" method="POST">
             <br>
             <div class="labEmail">Enter Email</div>
-            <input type="email" class="txtemail" required />
+            <input type="email" class="txtemail" name="__email" required />
             <div class="labPass">Enter Password</div>
-            <input type="password" class="txtpass" required/>
+            <input type="password" class="txtpass" name="__password" required/>
             <input type ="submit" class="btnsubmit"/>
         </form>
+
+        <div>
+            <div align="center" style="color: azure;">OR</div><br>
+            <button class="btnsubmit"><a style="text-decoration: none;" href="/index.html">Cancel</a></button>
+        </div>
 
     </div>
 

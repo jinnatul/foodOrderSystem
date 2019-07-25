@@ -49,7 +49,7 @@
                     <li><a href="#scrol_food">Our Foods</a></li>
                     <li><a href="#scrol_work">How it Work</a></li>
                     <li><a href="#scrol_cities">Our Cities</a></li>
-                    <li><a href="#" class="js--scroll-to-plans">Sign Up</a></li>
+                    <li><a href="/front_end/signup.html" >Sign Up</a></li>
                 </ul> 
             </div>
         </nav>
@@ -489,100 +489,7 @@
 
     </section>
 
-    <!--SignUp Plain Sections-->
-    <section class="section-plans js--section-plans" >
-        <div class="row">
-            <h2 class="wow zoomIn">Start eating Freshfood today</h2>
-        </div>
-
-        <div class="row">
-           
-            <!--Premium customers-->
-            <div class="col span_1_of_3">
-                <div class="plan-box wow fadeInDown">
-                    <div>
-                        <h3 class="head_col"><u>Premium Pack</u></h3>
-                        <p class="plan-price">3600Tk <span>/ month</span></p>
-                        <p class="plan-price-meal">That's only 120Tk per meal</p>
-                    </div>
-
-                    <div>
-                        <ul>
-                            <li><ion-icon name="checkbox-outline"></ion-icon>1 meal every day</li>
-                            <li><ion-icon name="checkbox-outline"></ion-icon>Order 24/7</li>
-                            <li><ion-icon name="checkbox-outline"></ion-icon>Chiken / Beef </li>
-                            <li><ion-icon name="checkbox-outline"></ion-icon>Rice + Salad</li>
-                            <li><ion-icon name="checkbox-outline"></ion-icon>Free delivery</li>
-                        </ul>
-                    </div>
-
-                    <div>
-                        <a href="#" onclick="document.getElementById('popup_signup').style.display='block';" class="btn btn-more">Sign up now</a>
-                    </div>
-
-                </div>
-
-            </div>
-
-            <!--Pre customers-->
-            <div class="col span_1_of_3">
-                <div class="plan-box wow fadeInLeft">
-                    <div>
-                        <h3 class="head_col"><u>Pro Pack</u></h3>
-                        <p class="plan-price">1300Tk <span>/ month</span></p>
-                        <p class="plan-price-meal">That's only 130Tk per meal</p>
-                    </div>
-    
-                    <div>
-                        <ul>
-                            <li><ion-icon name="checkbox-outline"></ion-icon>1 meal 10 days/month</li>
-                            <li><ion-icon name="checkbox-outline"></ion-icon>Order 24/7</li>
-                            <li><ion-icon name="checkbox-outline"></ion-icon>Chiken / Beef </li>
-                            <li><ion-icon name="checkbox-outline"></ion-icon>Rice + Salad</li>
-                            <li><ion-icon name="checkbox-outline"></ion-icon>Free delivery</li>
-                        </ul>
-                    </div>
-    
-                    <div>
-                        <a href="#" onclick="document.getElementById('popup_signup').style.display='block';" class="btn btn-more">Sign up now</a>
-                    </div>
-    
-                </div>
-    
-            </div>
-    
-
-            <!--Normal customers-->
-            <div class="col span_1_of_3">
-                <div class="plan-box wow fadeInRight">
-                    <div>
-                        <h3 class="head_col"><u>Normal Pack</u></h3>
-                        <p class="plan-price">140Tk <span>/ meal</span></p>
-                        <p class="plan-price-meal">&nbsp;</p>
-                    </div>
-        
-                    <div>
-                        <ul>
-                            <li><ion-icon name="checkbox-outline"></ion-icon>1 meal</li>
-                            <li><ion-icon name="checkbox-outline"></ion-icon>Order from 8 am to 12 pm</li>
-                            <li><ion-icon name="checkbox-outline"></ion-icon>Chiken / Beef </li>
-                            <li><ion-icon name="checkbox-outline"></ion-icon>Rice + Salad</li>
-                            <li><ion-icon name="checkbox-outline"></ion-icon>Free delivery</li>
-                        </ul>
-                    </div>
-        
-                    <div>
-                        <a href="#" onclick="document.getElementById('popup_signup').style.display='block';" class="btn btn-more">Sign up now</a>
-                    </div>
-        
-                </div>
-            </div>
-
-        </div>
-
-    </section>
-
-
+   
     <!--Contract section-->
     <section class="section-form">
         <div class="row">
@@ -697,7 +604,7 @@
 
     <div id="popup_login" class="modal">
  
-     <form class="modal-content animate" action="">
+     <form class="modal-content animate" action="/" method="POST">
        <div class="imgcontainer">
          <span onclick="document.getElementById('popup_login').style.display='none'" class="close" title="Close Modal">&times;</span>
          <img src="/resource/img/login.jpg" alt="Avatar" class="avatar">
@@ -705,8 +612,8 @@
    
        <div class="container">
 
-         <input type="text" placeholder="Enter Username" name="uname" required>
-         <input type="password" placeholder="Enter Password" name="psw" required>
+         <input type="email" placeholder="Enter Email" name="__email" required>
+         <input type="password" placeholder="Enter Password" name="__password" required>
            
          <button class="submit_info" type="submit">Login</button>
          <label>
@@ -741,7 +648,7 @@
          <input id="u_password" type="password" placeholder="Enter Password" name="__password" required>
          <input id="u_email" type="email" placeholder="Enter Email" name="__email" required>
            
-         <button class="submit_info" type="submit" onclick="document.getElementById('popup_signup').style.display='none';">Signup</button>
+         <button class="submit_info" type="submit" onclick="document.getElementById('popup_signup').style.display='none'; document.getElementById('popup_login').style.display='block';">Signup</button>
 
        </div>
 

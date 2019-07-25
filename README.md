@@ -1,5 +1,15 @@
 # Food-order-system
 
+## Back End Start
+Install node js packes
+(*) npm init //Create package       
+(*) npm i express  
+(*) npm i body-parser //Input get from
+(*) npm i nodemon  // Node server
+(*) npm i mongodb  //MongoDb
+(*) npm i password-hash  //Password Hash
+
+
 # Add Header
 ![11](https://user-images.githubusercontent.com/31995155/61857629-54cddf00-aee6-11e9-889f-511581b70b32.png)
 

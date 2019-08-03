@@ -80,3 +80,35 @@ var configDB = require('./authentication/config/database.js');
 
 # Add footer
 ![add footer](https://user-images.githubusercontent.com/31995155/59981745-eddcb200-9629-11e9-8ee2-c6452d7952a9.png)
+
+
+## Backend ( Admin & user panel )
+### Authentication user
+![1](https://user-images.githubusercontent.com/31995155/62408784-ccd78b80-b5ef-11e9-8f51-88dcb7be382d.png)
+
+### Login Admin
+![2](https://user-images.githubusercontent.com/31995155/62408785-ce08b880-b5ef-11e9-8977-a3f6a9ad2ba7.png)
+
+### Registration Admin
+![3](https://user-images.githubusercontent.com/31995155/62408786-cf39e580-b5ef-11e9-889e-ee1ae0d26b5d.png)
+
+### Admin panel
+![4](https://user-images.githubusercontent.com/31995155/62408787-d06b1280-b5ef-11e9-8b7c-b9b71fe44082.png)
+
+### Add Foods
+![5](https://user-images.githubusercontent.com/31995155/62408788-d19c3f80-b5ef-11e9-9f43-f16d00a6acc8.png)
+
+### Show foods Admin
+![6](https://user-images.githubusercontent.com/31995155/62408790-d2cd6c80-b5ef-11e9-8946-759d00d1c2a7.png)
+
+### Register User information
+![7](https://user-images.githubusercontent.com/31995155/62408791-db25a780-b5ef-11e9-888d-6108abe391bd.png)
+
+### Login User / Customers
+![8](https://user-images.githubusercontent.com/31995155/62408796-df51c500-b5ef-11e9-93b1-ee842da59b1f.png)
+
+### User Panel
+![9](https://user-images.githubusercontent.com/31995155/62408799-e24cb580-b5ef-11e9-8610-600189036ef5.png)
+
+### User show foods & add cards
+![10](https://user-images.githubusercontent.com/31995155/62408802-e4167900-b5ef-11e9-89c2-de993698cd6c.png)

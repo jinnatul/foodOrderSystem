@@ -18,6 +18,20 @@
 - npm i express-session
 - npm i multer
 
+### Include packes
+- var express = require('express');
+- var app = express();
+- var port = process.env.PORT || 2223;
+- var mongoose = require('mongoose');
+- var passport = require('passport');
+- var flash = require('connect-flash');
+- var path = require('path');
+- var morgan = require('morgan');
+- var cookieParser = require('cookie-parser');
+- var bodyParser = require('body-parser');
+- var session = require('express-session');
+- var multer = require('multer');
+
 
 ### Add CSS/JS later using EJS with nodejs/express
 - server.js file add app.use(express.static(__dirname + '/file name'));

@@ -9,6 +9,9 @@ Install node js packes
 (*) npm i mongodb  //MongoDb
 (*) npm i password-hash  //Password Hash
 
+### Add CSS/JS later using EJS with nodejs/express
+server.js file add app.use(express.static(__dirname + '/file name'));
+Index.ejs file need to add <script src="/javascripts/jquery.js"></script>    
 
 # Add Header
 ![11](https://user-images.githubusercontent.com/31995155/61857629-54cddf00-aee6-11e9-889f-511581b70b32.png)

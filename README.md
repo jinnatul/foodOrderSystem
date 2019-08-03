@@ -1,13 +1,23 @@
 # Food-order-system
 
 ## Back End Start
-Install node js packes
+
+### Install nodejs packes
 - npm init //Create package       
 - npm i express  
 - npm i body-parser //Input get from
 - npm i nodemon  // Node server
 - npm i mongodb  //MongoDb
 - npm i password-hash  //Password Hash
+- npm i passport //authentication
+- npm i flash
+- npm i path
+- npm i cookie-Parser
+- npm i morgan
+- npm i connect-flash
+- npm i express-session
+- npm i multer
+
 
 ### Add CSS/JS later using EJS with nodejs/express
 server.js file add app.use(express.static(__dirname + '/file name'));

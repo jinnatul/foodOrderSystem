@@ -1,0 +1,26 @@
+<title>Food Menu</title>
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+
+
+    <br/>
+    <input type="button" value="Back Main" class="btn btn-danger" onClick="location.href='/userpanel'">
+    <br/><br/>
+    <div class="row">
+        <!--Show data from DB-->
+        <% for (var i = data.length - 1; i >= 0; i--) { %>
+        <div class="col-sm-3">
+            <div class="thumbnail">
+            
+                    <h3>P_Name: <%= data[i].p_name %></h3>
+                    <!-- <h3><%= data[i]._id %></h3> -->
+                    <img src="<%= data[i].p_image %>" class = "img-thumbnail">						
+                    <h4 id="category">P_Category: <%= data[i].p_category %></h4>
+                    <h4>P_Price: <%= data[i].p_price %></h4>
+                    
+                    <input id="prodId" name="prodId" type="hidden" value="<%= data[i]._id %>">
+                    <input type="submit"  class = "btn btn-success" name="Add_Card" value="Add_Card">
+                  
+                </div>
+            </div>
+        <% } %>
+    </div>

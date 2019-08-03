@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>SignUp Page</title>
+        <link href="/resource/css/login_signup.css" rel="stylesheet"/>
+    </head>
+    
+    <body>
+        <!--Page icon-->
+        <link rel="icon" href="/resource/img/favicon.ico" type="image/ico" sizes="16x16">
+        
+        <div class ="SignUpinbox">
+            <img src="/resource/css/img/people_icon.png" alt ="Alternate Text" class="user" />
+            <h2>SignUp Here</h2>
+        
+            <form autocomplete="off" action="/sign_up" method="POST">
+                <br>
+                <div class="labName">Enter UserName</div>
+                <input type="text" class="txtname" name="__name" required />
+
+                <div class="labEmail">Enter Email</div>
+                <input type="email" class="txtemail" name="__email" required />
+
+                <div class="labPass">Enter Password</div>
+                <input type="password" class="txtpass" name="__password" required/>
+
+                <div class="labPhone">Enter Phone Number</div>
+                <input type="text" class="txtphone" name="__phone" required/>
+
+                <input type ="submit" class="btnsubmit" value="Registration"/>
+        </form>
+
+        <div>
+            <div align="center" style="color: azure;">OR</div><br>
+            
+            <input class="submit" type=button onClick="location.href='/front_end/login.html'" value='Log In'>
+            <input class="submit" type=button onClick="location.href='/index.html'" value='Cancel'>
+             
+        </div>
+
+    </div>
+
+</body>
+</html>

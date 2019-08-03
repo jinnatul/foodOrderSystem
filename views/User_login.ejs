@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>User Authentication</title>
+	<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
+	<style>
+		body { 
+			padding-top:80px; 
+			background-image: url('/img/back_login.jpg');
+			background-size: 1430px  630px;
+		}
+
+		.h4_tag {
+			color: rgba(61, 255, 2, 0.979);
+		}
+		label {
+			color: rgb(1, 225, 255);
+			font-size: 16px;
+		}
+		.h1_tag{
+			color: rgb(5, 255, 159);
+		}
+		a {
+			color: rgb(0, 214, 161);
+			font-weight: bold;
+			font-size: 20px;
+		}
+	</style>
+</head>
+<body>
+<div class="container">
+
+<div class="col-sm-4 col-sm-offset-4">
+
+	<h1 class="h1_tag">User Login</h1>
+
+	
+
+	<!-- LOGIN FORM -->
+	<form action="/User_login" method="post">
+		<div class="form-group">
+			<label>Email</label>
+			<input type="text" class="form-control" name="email">
+		</div>
+		<div class="form-group">
+			<label>Password</label>
+			<input type="password" class="form-control" name="password">
+		</div>
+
+		<button type="submit" class="btn btn-success">Login</button>
+	</form>
+
+	<hr>
+
+	<h4 class="h4_tag">Need an account? <a href="/User_signup">Signup</a></h4>
+	<h4 class="h4_tag">Or go <a href="/">home</a>.</h4>
+
+</div>
+
+</div>
+</body>
+</html>

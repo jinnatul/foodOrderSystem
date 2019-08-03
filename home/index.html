@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Fresh Food Oder System</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Add all css and js file and resource-->
+
+    <!--Font link-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,300italic" rel="stylesheet" type="text/css">
+
+    <!--Css files-->
+    <link rel="stylesheet" type="text/css" href="/resource/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/resource/css/hover_pic.css">
+    <link rel="stylesheet" type="text/css" href="/resource/css/responsive_design.css">
+    <link rel="stylesheet" type="text/css" href="/vendors/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="/vendors/css/grid.css">
+    <link rel="stylesheet" type="text/css" href="/vendors/css/animate.min.css">
+
+    <!--js files-->
+    <script src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js"></script>
+    <script src="resource/js/javascript.js"></script>
+
+    
+    <!--Page icon-->
+    <link rel="icon" href="/resource/img/favicon.ico" type="image/ico" sizes="16x16">
+
+</head>
+
+<body>
+
+    <!--Header session-->
+    <header class="js_header">
+
+        <video class="video" autoplay loop muted>
+            <source src="/resource/img/back_video.mp4" type="video/mp4">
+        </video>
+       
+        <img src="/resource/img/logo_white.png" alt="Fresh Food Logo" class="logo wow fadeInLeft">
+
+        <!--nav ver session-->
+        <nav>
+            <div class="row">
+                <ul class="main_nav wow fadeInRight">
+                    <li><a href="#scrol_delivery">Food Delivery</a></li>
+                    <li><a href="#scrol_food">Our Foods</a></li>
+                    <li><a href="#scrol_work">How it Work</a></li>
+                    <li><a href="#scrol_cities">Our Cities</a></li>
+                    <li><a href="/userType" >Log In</a></li>
+                </ul> 
+            </div>
+        </nav>
+
+        <!--Marquee session-->
+        <div align="right" style="width:50%;">
+            <marquee behavior="scroll" direction="left" onmousedown="this.stop();" onmouseup="this.start()">
+                <h4>Good Bye, Hungry, Welcome to Fresh Food Delevary System. Visit: morol1957.blogspot.com</h4>
+            </marquee>
+        </div>
+
+        <div class="hero-text-box">
+            <h1>Good Bye, Hungry.<br> Hello, Super Tasty Meals.</h1>
+            <a class="btn btn-hangry" href="/User_login">I’m Hungry</a>
+            <a class="btn btn-more js--scroll-to-start" href="#">Show Me More</a>
+        </div>
+    </header>
+
+    
+    <!--Features session-->
+    <section class="section-features clear_Space js--section-features"  id="scrol_delivery">
+       
+        <div class="row wow fadeInDown">
+        <h2>Get food fast &mdash; Testy Fresh food</h2>
+
+        <p class="long-copy">
+            Hello, we’re Fresh_food, your new premium food delivery service. 
+            We know you’re always busy. No time for cooking. 
+            So let us take care of that, we’re really good at it, we promise!
+        </p>
+        </div>
+
+        <div class="row wow fadeInLeft">
+            
+            <!--Section 1-->
+            <div class="col span_1_of_4 box">
+                <div id = "icon_1">
+                    <ion-icon name="infinite" class="icon_big"></ion-icon>
+                </div>
+                
+                <div id="h3_color1">
+                    <h3>Up to 365 days/year</h3>
+                </div>
+                
+                <p>
+                    Never cook again! We really mean that. Our subscription plans include up to 365 days/year coverage. 
+                    You can also choose to order more flexibly if that's your style.
+                </p>
+            </div>
+
+            <!--Section 2-->
+            <div class="col span_1_of_4 box">
+                <div id = "icon_2">
+                    <ion-icon name="time" class="icon_big"></ion-icon>
+                </div>
+                
+                <div id="h3_color2">
+                    <h3>Ready in 20 minutes</h3>
+                </div>
+                
+                <p>
+                    You're only twenty minutes away from your delicious and super healthy meals delivered right to 
+                    your home. We work with the best chefs in each town to ensure that you're 100% happy.
+                </p>
+            </div>
+
+                <!--Section 3-->
+            <div class="col span_1_of_4 box">
+                <div id = "icon_3">
+                    <ion-icon name="nutrition" class="icon_big"></ion-icon>
+                </div>
+                
+                <div id="h3_color3">
+                    <h3>100% organic</h3>
+                </div>
+
+                <p>
+                    All our vegetables are fresh, organic and local. Animals are raised without added 
+                    hormones or antibiotics. Good for your health, the environment, and it also tastes better!
+                </p>
+            </div>
+
+                <!--Section 4-->
+            <div class="col span_1_of_4 box">
+                <div id = "icon_4">
+                    <ion-icon name="cart" class="icon_big"></ion-icon>
+                </div>
+            
+                <div id="h3_color4">
+                    <h3>Order anything</h3>
+                </div>
+
+                <p>
+                    We don't limit your creativity, which means you can order whatever you feel like. 
+                    You can also choose from our menu containing over 100 delicious meals. It's up to you!
+               </p>
+            
+           </div>
+
+        </div>
+
+    </section>
+
+    
+    <!--Meals session-->
+    <section class="section-meals" id="scrol_food">
+
+        <div>
+            <h2 class="wow zoomIn" id="meals_title">Our Fresh Food Items:</h2>
+        </div>
+
+        <button type="button" onclick="location.href='/User_login'" class="btn_submit btn_submit1 more_btn">Show More</button>
+
+        <!--Imag description-->
+        <!--1, 2, 3 meals 1st row-->
+        <div class="meals_row wow fadeInDown">
+            
+            <div class="meal_col">                
+            <!-- colored -->
+                <div class="ih-item square colored effect8 scale_up"><a>
+                <div class="img"><img src="/resource/img/1.jpg" alt="img"></div>
+                <div class="info">
+                <h3>Best Chicken Burgers</h3>
+                <p>
+                    <br/><br/>
+                    <u>Price: 150tk / piece</u><br>
+                </p>
+                </div></a></div>
+            <!-- end colored -->    
+            </div>
+
+            <div class="meal_col">                
+            <!-- colored -->
+                <div class="ih-item square colored effect4"><a>
+                <div class="img"><img src="/resource/img/2.jpg" alt="img"></div>
+                <div class="mask1"></div>
+                <div class="mask2"></div>
+                <div class="info">
+                <h3>Barbecue chicken</h3>
+                <p>
+                    <br/><br/>
+                    <u>Price: 90tk / Quarter piece</u><br>
+                </p>
+                </div></a></div>
+            <!-- end colored -->    
+            </div>
+                
+            <div class="meal_col">                
+            <!-- colored -->
+                <div class="ih-item square colored effect8 scale_up"><a>
+                <div class="img"><img src="/resource/img/3.jpg" alt="img"></div>
+                <div class="info">
+                <h3>Chicken Pizza</h3>
+                <p>
+                    <br/>
+                    <u>Size: (10.5in)</u><br/><br/>
+                    <u>Price: 750tk / piece</u><br>
+                </p>
+                </div></a></div>
+            <!-- end colored -->    
+            </div>
+
+        </div>
+
+
+        <!--4, 5, 6 meals 2nd row-->
+        <div class="meals_row wow fadeInLeft">
+             
+        <div class="meal_col">                
+        <!-- colored -->
+            <div class="ih-item square effect4 colored"><a>
+            <div class="img"><img src="/resource/img/4.jpg" alt="img"></div>
+            <div class="mask1"></div>
+            <div class="mask2"></div>
+            <div class="info">
+            <h3>Chiken Noodle</h3>
+            <p>
+                <br/><br/>
+                <u>Price: 100tk / Per Plate</u><br>
+            </p>
+            </div></a></div>
+        <!-- end colored -->    
+        </div>
+
+            <div class="meal_col">                
+                <!-- colored -->
+                <div class="ih-item square colored effect8 scale_up"><a>
+                <div class="img"><img src="/resource/img/5.jpg" alt="img"></div>
+                <div class="info">
+                <h3>Shrimp Noodle</h3>
+                <p>
+                    <br/><br/>
+                    <u>Price: 120tk / Per Plate</u><br>
+                </p>
+                </div></a></div>
+            <!-- end colored -->    
+            </div>
+                
+            <div class="meal_col">                
+            <!-- colored -->
+                <div class="ih-item square colored effect4"><a>
+                <div class="img"><img src="/resource/img/6.jpg" alt="img"></div>
+                <div class="mask1"></div>
+                <div class="mask2"></div>
+                <div class="info">
+                <h3>Barbecue Beef</h3>
+                <p>
+                    <br/><br/>
+                    <u>Price: 100tk / Per piece</u><br>
+                </p>
+                </div></a></div>
+            <!-- end colored -->    
+            </div>
+
+        </div>
+
+
+        <!--7, 8, 9 meals 3rd row-->
+        <div class="meals_row wow fadeInRight">
+
+            <div class="meal_col">                
+            <!-- colored -->
+                <div class="ih-item square colored effect8 scale_up"><a>
+                <div class="img"><img src="/resource/img/7.jpg" alt="img"></div>
+                <div class="info">
+                <h3>কাচ্চি বিরিয়ানি : Kacchi Biriyani</h3>
+                <p>
+                    <br/>
+                    <u>Kacchi, Chicken Roast & Borhani</u><br/><br/>
+                    <u>Price: 550tk / Per package</u><br>
+                </p>
+                </div></a></div>
+            <!-- end colored -->    
+            </div>
+
+            <div class="meal_col">                
+                <!-- colored -->
+                <div class="ih-item square colored effect4"><a>
+                <div class="img"><img src="/resource/img/8.jpg" alt="img"></div>
+                <div class="mask1"></div>
+                <div class="mask2"></div>
+                <div class="info">
+                <h3>Beef kala Vuna</h3>
+                <p>
+                    <br/><br/>
+                    <u>Price: 120tk / Per Plate</u><br>
+                </p>
+                </div></a></div>
+            <!-- end colored -->    
+            </div>
+                
+            <div class="meal_col">                
+                <!-- colored -->
+                <div class="ih-item square colored effect8 scale_up"><a>
+                <div class="img"><img src="/resource/img/9.jpg" alt="img"></div>
+                <div class="info">
+                <h3>Fried chicken</h3>
+                <p>
+                    <br/><br/>
+                    <u>Price: 130tk / 2 piece</u><br>
+                </p>
+                </div></a></div>
+            <!-- end colored -->    
+            </div>
+
+        </div>
+
+        <button type="button" onclick="location.href='/User_login'" class="btn_submit btn_submit1 more_btn">Show More</button>
+    
+    </section>
+
+
+    <!--Working Steps session-->
+    <section class="section-steps" id = "scrol_work">
+        
+        <div class="row">
+            <h2 class="wow zoomIn">How it works &ndash; Simple 1, 2, 3</h2>
+        </div>
+
+        <div class="row">
+            <div class="col span_1_of_2 step-box">
+                <img src="/resource/img/phone.png" class="phone wow fadeInLeft">
+            </div>
+
+            
+
+            <div class="col span_1_of_2 step-box wow fadeInRight">
+                
+                <div class="work-step clear_Space">
+                    <div>1</div>
+                    <p>Choose the subscription plan that best fits your needs and sign up today.</p>
+                </div>
+
+                <div class="work-step clear_Space">
+                    <div>2</div>
+                    <p>Order your delicious meal using our website. Or you can even call us!</p>
+                </div>
+
+                <div class="work-step clear_Space">
+                    <div>3</div>                           
+                     <p>Enjoy your meal after less than 20 minutes. See you the next time!</p>
+                </div>
+
+                <a href="#" class="btn-app"><img src="/resource/img/download-app.svg" alt="App Store Button"></a>
+                <a href="#" class="btn-app "><img src="/resource/img/download-app-android.png" alt="Play Store Button"></a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!--Cities session-->
+    <section class="section-cities" id="scrol_cities">
+        
+        
+        <div class="row pic_rpw">
+
+
+            <div class="row">
+                <marquee behavior="scroll" direction="left" onmousedown="this.stop();" onmouseup="this.start()">
+                    <h2 id="marquee2">We're currently in these cities. Our cities information: 
+                        City name: Dhaka, 200+ happy eaters, 10+ top chefs.
+                        City name: Cox's Bazar, 100+ happy eaters, 5+ top chefs.
+                        City name: Sajek Valley, 50+ happy eaters, 5+ top chefs.
+                        City name: Sylhet, 80+ happy eaters, 8+ top chefs. Thanks for visit.
+                    </h2>
+                </marquee>
+            </div>
+
+            <div class="cities_row wow fadeInRight">
+                
+                <!--Dhaka City Information-->
+                <div class="cities_col ">
+
+                        <div class="ih-item square_city colored effect8 scale_up cities_img"><a>
+                        <div class="img"><img src="/resource/img/city1.jpg" alt="img"></div>
+                        <div class="info">
+                        <h3>Dhaka</h3>
+                        <p>
+                            <u>200+ happy eaters</u><br><br>
+                            <u>20+ top chefs</u>
+                        </p>
+                        </div></a></div>
+                </div>
+            
+                <!--Cox's Bazar City Information-->
+                <div class="cities_col">
+                       
+                    <div class="ih-item square_city colored effect8 scale_up cities_img"><a>
+                        <div class="img"><img src="/resource/img/city2.jpg" alt="img"></div>
+                        <div class="info">
+                        <h3>Cox's Bazar</h3>
+                        <p>
+                            <u>100+ happy eaters</u><br><br>
+                            <u>10+ top chefs</u>
+                        </p>
+                        </div></a></div>
+                </div>
+                            
+                <!--Sajek City Information-->
+                <div class="cities_col">
+                        
+                    <div class="ih-item square_city colored effect8 scale_up cities_img"><a>
+                        <div class="img"><img src="/resource/img/city3.jpg" alt="img"></div>
+                        <div class="info">
+                        <h3>Sajek Valley</h3>
+                        <p>
+                            <u>50+ happy eaters</u><br><br>
+                            <u>5+ top chefs</u>
+                        </p>
+                        </div></a></div>
+                </div>
+
+                <!--Sylhet City Information-->
+                <div class="cities_col">
+                    
+                    <div class="ih-item square_city colored effect8 scale_up cities_img"><a>
+                        <div class="img"><img src="/resource/img/city4.jpg" alt="img"></div>
+                        <div class="info">
+                        <h3>Sylhet</h3>
+                        <p>
+                            <u>80+ happy eaters</u><br><br>
+                            <u>8+ top chefs</u>
+                        </p>
+                        </div></a></div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!--Testimonials section-->
+    <section class="section-testimonials wow fadeInLeft">
+
+        <div class="row">
+            <h2 class="wow zoomIn">Our customers can't live without us</h2>
+        </div>
+
+        <div class="row">
+
+            <!--Customer 1 reviews-->
+            <div class="col span_1_of_3 wow fadeInUp">
+                <blockquote>
+                        Fresh Food is just awesome! I just launched a startup which leaves me 
+                        with no time for cooking, so FreshFood is a life-saver. Now that I got 
+                        used to it, I couldn't live without my daily meals!
+
+                        <cite><img src="/resource/img/customer1.jpg">Jinnat Morol</cite>
+                </blockquote>
+
+            </div>
+
+            <!--Customer 2 reviews-->
+            <div class="col span_1_of_3 wow fadeInDown">
+                <blockquote> 
+                        Inexpensive, healthy and great-tasting meals, delivered right to my home. 
+                        We have lots of food delivery here in Dhaka, but no one comes even close to Freshfood. 
+                        Me and my family are so in love!
+
+                        <cite><img src="/resource/img/customer2.jpg">Farhana Jinnat</cite>
+                </blockquote>
+            </div>
+
+            <!--Customer 3 reviews-->
+            <div class="col span_1_of_3 wow fadeInUp">
+                <blockquote>
+                        I was looking for a quick and easy food delivery service in Dhaka. 
+                        I tried a lot of them and ended up with Freshfood. Best food delivery 
+                        service in the Bay Area. Keep up the great work!
+
+                        <cite><img src="/resource/img/customer3.jpg">Lakshman Gope</cite>
+                </blockquote>
+            </div>
+        
+        </div>
+
+    </section>
+
+   
+    <!--Contract section-->
+    <section class="section-form">
+        <div class="row">
+            <h2 class="wow zoomIn">We're happy to hear from you</h2>
+        </div>
+    
+        <div class="row wow fadeInRight">
+            <form method="post" action="#" class="contact-form">
+                
+                <!--Input Name-->
+                <div class="row">
+                    <div class="col span_1_of_3">
+                        <label for="name">Name</label>
+                    </div>
+                    
+                    <div class="col span_2_of_3">
+                        <input type="text" name="name" id="name" placeholder="Your name" required>
+                    </div>
+                </div>
+
+                <!--Input email-->
+                <div class="row">
+                    <div class="col span_1_of_3">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="col span_2_of_3">
+                        <input type="email" name="email" id="email" placeholder="Your email" required>
+                    </div>
+                </div>
+                
+                <!--Input Find us-->
+                <div class="row">
+                    <div class="col span_1_of_3">
+                        <label for="find-us">How did you find us?</label>
+                    </div>
+                    <div class="col span_2_of_3">
+                        <select name="find-us" id="find-us">
+                            <option value="friends" selected>Friends</option>
+                            <option value="search">Search engine</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <!--Input Comments / revews-->
+                <div class="row">
+                    <div class="col span_1_of_3">
+                        <label>Drop us a line (Comment / Revews)</label>
+                    </div>
+                    <div class="col span_2_of_3">
+                        <textarea name="message" placeholder="Your message"></textarea>
+                    </div>
+                </div>
+
+                <!--Submit-->
+                <div class="row">
+                    <div class="col span_1_of_3">
+                        <label>&nbsp;</label>
+                    </div>
+                    <div class="col span_2_of_3">
+                        <input class="btn_submit btn_submit1" type="submit" value="Send it!">
+                    </div>
+                </div>
+                    
+            </form>
+                
+        </div>
+    </section>
+
+    <!--Footer section-->
+    <section class="clear_footer">
+    <footer>
+        <div class="row">
+
+            <!--About Blog-->
+            <div class="col span_1_of_2">
+                <ul class="footer-nav">
+                    <li><a target="_blank" href="https://morol1957.blogspot.com/">About us</a></li>
+                    <li><a target="_blank" href="https://programming-jinnatul.blogspot.com/">Blog</a></li>
+                </ul>
+            </div>
+
+            <!--Site links-->
+            <div class="col span_1_of_2">
+                <ul class="social-links">
+                    <li><a target="_blank" href="https://www.facebook.com/mdjinnatul.islam"><ion-icon class="facebook" name="logo-facebook"></ion-icon></a></li>
+                    <li><a target="_blank" href="https://twitter.com/morolswediu"><ion-icon class="twitter" name="logo-twitter"></ion-icon></a></li>
+                    <li><a target="_blank" href="https://github.com/jinnatul"><ion-icon class="github" name="logo-github"></ion-icon></a></li>
+                    <li><a target="_blank" href="https://programming-jinnatul.blogspot.com/"><ion-icon class="website" name="logo-dribbble"></ion-icon></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <p>
+                Copyright &copy; 2019 by Morol. All rights reserved.
+            </p>
+       </div>
+    </footer>
+</section>
+
+
+<!--Scrolling button-->
+ <button class="js_top"  title="Go to Home"><img id="go_btn" src="/resource/img/top.png"></button>
+
+
+   <!--Java script --->
+ 
+    <script src="/vendors/js/jquery.min.js"></script>
+    <script src="/vendors/js/respond.min.js"></script>
+    <script src="/vendors/js/html5shiv.min.js"></script>
+    <script src="/vendors/js/selectivizr.min.js"></script>
+    <script src="/vendors/js/wow.js"></script>
+    <script src="/resource/js/jquery.js"></script>
+    <script src="/vendors/js/wow.min.js"></script>
+    <script> new WOW().init(); </script>
+
+</body>
+
+</html>

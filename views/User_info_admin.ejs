@@ -1,0 +1,31 @@
+<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+
+<div class="container">
+    <br/>
+    <input type="button" value="Back Main" class="btn btn-success" onClick="location.href='/admin.html'">
+    <h2><u>Registration Users:</u> </h2><br/>
+
+    <table  class="table table-striped">
+
+            <tr>
+                <th scope="col">Serial</th>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Mobile</th>
+            </tr>
+        
+        
+            <% for (var i = 0; i < data.length; i++) { %>
+                <tr scope="row">
+                    <td> <%= i + 1 %></td>
+                    <td><%= data[i].local.name %></td>
+                    <td><%= data[i].local.email %></td>
+                    <td><%= data[i].local.mobile %></td>
+                </tr>
+            <% } %>
+        
+        </table>
+        
+</div>
+
+    

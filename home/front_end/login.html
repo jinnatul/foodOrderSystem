@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>LogIn Page</title>
+    <link href="/resource/css/login_signup.css" rel="stylesheet"/>
+</head>
+<body>
+   
+    <!--Page icon-->
+    <link rel="icon" href="/resource/img/favicon.ico" type="image/ico" sizes="16x16">
+
+    <div class ="loginbox">
+        <img src="/resource/css/img/people_icon.png" alt ="Alternate Text" class="user" />
+        <h2>Log In Here</h2>
+
+        <form autocomplete="off" action="/log_in" method="POST">
+            <br>
+            <div class="labEmail">Enter Email</div>
+            <input type="email" class="txtemail" name="__email" required />
+            <div class="labPass">Enter Password</div>
+            <input type="password" class="txtpass" name="__password" required/>
+            <input type ="submit" class="btnsubmit"/>
+        </form>
+
+        <div>
+            <div align="center" style="color: azure;">OR</div><br>
+            <input class="btnsubmit" type=button onClick="location.href='/index.html'" value='Cancel'>
+        </div>
+
+    </div>
+
+</body>
+</html>

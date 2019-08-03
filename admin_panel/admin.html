@@ -1,0 +1,191 @@
+﻿<!DOCTYPE html>
+<html> 
+<head>
+    
+    <title>Admin Panel</title> 
+	<!-- Google Fonts-->
+	<link href="/css/font.css" rel="stylesheet" />
+	<!-- Materialize Styles-->
+	<link href="/css/materialize.min.css" rel="stylesheet" media="screen,projection" />
+    <!-- Bootstrap Styles-->
+    <link href="/css/bootstrap.css" rel="stylesheet" />
+    <!-- Custom Styles-->
+    <link href="/css/custom-styles.css" rel="stylesheet" />
+    
+    
+    
+</head>
+
+<body>
+    <div id="wrapper">
+        <nav class="navbar navbar-default top-navbar" role="navigation">
+            <div class="navbar-header">
+                
+                <a class="navbar-brand waves-effect waves-dark" href="admin.html"><i class="large material-icons">home</i> <strong>Fresh Food</strong></a>
+				
+		<div id="sideNav" href=""><i class="material-icons dp48">toc</i></div>
+            </div>
+
+            <ul class="nav navbar-top-links navbar-right"> 
+				<li><a class="dropdown-button waves-effect waves-dark" href="#!" data-activates="dropdown1"><img src="/icon_img/admin.png"> <b>Admin</b> <i class="material-icons right">arrow_drop_down</i></a></li>
+            </ul>
+		</nav>
+		
+		<!-- Dropdown Structure -->
+        <ul id="dropdown1" class="dropdown-content">
+            <li><a href="#"> My Profile</a></li>
+            <li><a href="/index.html"> Logout</a></li>
+        </ul>
+
+	   <!--/. NAV TOP  -->
+        <nav class="navbar-default navbar-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+
+                    <li>
+                        <a class="active-menu waves-effect waves-dark" href="#"><img class="admin_img" src="/icon_img/dashboard.png"> Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="/food" class="waves-effect waves-dark"><img class="admin_img" src="/icon_img/food.png">Foods</a>
+                    </li>
+					<li>
+                        <a href="/User_info_admin" class="waves-effect waves-dark"><img class="admin_img" src="/icon_img/user_info.png"> User Information</a>
+                    </li>
+                    <li>
+                        <a href="#" class="waves-effect waves-dark"><img class="admin_img" src="/icon_img/current_order.png"> Current Orders </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#" class="waves-effect waves-dark"><img class="admin_img" src="/icon_img/all_order.png"> All Orders</a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </nav>
+        <!-- /. NAV SIDE  -->
+      
+		<div id="page-wrapper">
+		 
+            <div id="page-inner">
+
+			<div class="dashboard-cards"> 
+                <div class="row">
+
+					<!--Foods Info-->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+					
+						<div class="card horizontal cardIcon waves-effect waves-dark">
+							<div class="card-image red">
+								<i class="large material-icons">local_dining</i>>
+							</div>
+							
+							<div class="card-stacked green">
+								<div class="card-content"> <h3>84,198</h3> </div>
+							
+							    <div class="card-action"> <strong>Products</strong> </div>
+							</div>
+						</div>
+					</div>
+
+					<!--Sales Info-->
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+					
+						<div class="card horizontal cardIcon waves-effect waves-dark">
+						    <div class="card-image orange"> 
+								<i class="material-icons dp48">shopping_cart</i>
+						    </div>
+						
+							<div class="card-stacked green">
+							    <div class="card-content"> <h3>36,540</h3></div>
+						        <div class="card-action"><strong>Sales</strong></div>
+						    </div>
+						</div> 
+					</div>
+					
+					<!--Customer Info-->
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+					
+						<div class="card horizontal cardIcon waves-effect waves-dark">
+							<div class="card-image blue">
+								<i class="material-icons dp48">supervisor_account</i>
+							</div>
+							
+							<div class="card-stacked green">
+								<div class="card-content"> <h3>24,225</h3></div>
+							 
+								<div class="card-action"> <strong>Customers</strong></div>
+							</div>
+						</div> 
+					</div>
+
+                </div>
+			   </div>
+
+
+				<!-- /. Chart --> 
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12"> 
+					<div class="cirStats">
+						  	<div class="row">
+								<div class="col-xs-12 col-sm-4 col-md-4"> 
+										<div class="card-panel text-center">
+											<h4>Profit</h4>
+											<div class="easypiechart" id="easypiechart-blue" data-percent="82" ><span class="percent">82%</span>
+											</div> 
+										</div>
+								</div>
+								<div class="col-xs-12 col-sm-4 col-md-4"> 
+										<div class="card-panel text-center">
+											<h4>Sales</h4>
+											<div class="easypiechart" id="easypiechart-red" data-percent="46" ><span class="percent">46%</span>
+											</div>
+										</div>
+								</div>
+								<div class="col-xs-12 col-sm-4 col-md-4"> 
+										<div class="card-panel text-center">
+											<h4>Customers</h4>
+											<div class="easypiechart" id="easypiechart-teal" data-percent="84" ><span class="percent">84%</span>
+											</div> 
+										</div>
+								</div>								
+							</div>
+						</div>							
+						</div><!--/.row-->
+				
+					</div>
+					
+		
+                <!--Footer-->
+				<footer><p>All right reserved. Template by: WebThemez.com & Morol</p>
+				
+        
+				</footer>
+            </div>
+            <!-- /. PAGE INNER  -->
+        </div>
+        <!-- /. PAGE WRAPPER  -->
+    </div>
+	<!-- /. WRAPPER  -->
+	
+    <!-- JS Scripts-->
+    <!-- jQuery Js -->
+    <script src="/js/jquery-3.4.1.min.js"></script>
+	
+	<!-- Bootstrap Js -->
+    <script src="/js/bootstrap.min.js"></script>
+	
+	 <!-- Material Js -->
+	<script src="/js/materialize.min.js"></script>
+	
+	 <!-- Chart Js -->
+	<script src="/js/easypiechart.js"></script>
+	<script src="/js/easypiechart-data.js"></script>
+
+    <!-- Custom Js -->
+	<script src="/js/custom-scripts.js"></script> 
+
+ 
+</body>
+
+</html>

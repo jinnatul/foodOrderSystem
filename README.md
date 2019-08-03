@@ -2,12 +2,12 @@
 
 ## Back End Start
 Install node js packes
-(*) npm init //Create package       
-(*) npm i express  
-(*) npm i body-parser //Input get from
-(*) npm i nodemon  // Node server
-(*) npm i mongodb  //MongoDb
-(*) npm i password-hash  //Password Hash
+- npm init //Create package       
+- npm i express  
+- npm i body-parser //Input get from
+- npm i nodemon  // Node server
+- npm i mongodb  //MongoDb
+- npm i password-hash  //Password Hash
 
 ### Add CSS/JS later using EJS with nodejs/express
 server.js file add app.use(express.static(__dirname + '/file name'));

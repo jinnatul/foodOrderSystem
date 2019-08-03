@@ -23,6 +23,23 @@
 - server.js file add app.use(express.static(__dirname + '/file name'));
 - Index.ejs file need to add <script src="/javascripts/jquery.js"></script>    
 
+## Directory access
+- app.use(express.static(__dirname + '/authentication/front_end')); //Access javascript file
+- app.use(express.static(__dirname + '/admin_panel')); 
+- app.use(express.static(__dirname + '/user_panel'));
+- app.use(express.static(__dirname + '/home')); 
+- app.use(express.static(__dirname + '/uploads')); 
+- app.use(express.static(__dirname + '/authentication'))
+- app.set('views', path.join(__dirname, 'views'));
+
+### Collections
+- var Detail = require('./authentication/app/models/foodDB'); //FoodInfo
+- var __User = require('./authentication/app/models/userDB'); //CustomerInfo
+- var __Admin = require('./authentication/app/models/adminDB'); //AdminInfo
+
+// Our Database
+var configDB = require('./authentication/config/database.js');
+
 # Add Header
 ![11](https://user-images.githubusercontent.com/31995155/61857629-54cddf00-aee6-11e9-889f-511581b70b32.png)
 
